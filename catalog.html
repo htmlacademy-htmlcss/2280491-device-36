@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Academy: Девайс каталог</title>
+    </head>
+
+    <body>
+        <header>
+            <!-- Тот же, что и в indes.html -->
+            <h1 class="visually-hidden">Каталог товаров</h1>
+            <img class="logo" src="#" alt="Логотип магазина"></img>
+        </header>
+
+        <main>
+            <h2>Моноподы для селфи</h2>
+            <ul class="breadcrumbs">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="#">Каталог товаров</a></li>
+                <li><a href="#">Моноподы для селфи</a></li>
+            </ul>
+
+            <section class="filter-and-sort">
+
+                <form class="filter" method="get">
+                    <div>Фильтр:</div>
+
+                    <div>
+                        <input type="range" min="0" max="5000" step="1" id="cost">
+                        <label for="cost">Стоимость</label>
+                    </div>
+
+                    <fieldset>
+                        <legend>Цвет</legend>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="black" name="black" checked>
+                                <label for="black">Чёрный</label>
+                            </li>
+                            <li>
+                                <div>
+                                    <input type="checkbox" id="white" name="white" checked>
+                                    <label for="white">Белый</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <input type="checkbox" id="blue" name="blue">
+                                    <label for="blue">Синий</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <input type="checkbox" id="red" name="red">
+                                    <label for="red">Красный</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <input type="checkbox" id="pink" name="pink">
+                                    <label for="pink">Розовый</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Bluetooth</legend>
+                        <div>
+                            <div>
+                                <input type="radio" id="bluetooth-yes" checked>
+                                <label for="bluetooth-yes">Есть</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="bluetooth-no">
+                                <label for="bluetooth-no">Нет</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit">Показать</button>
+                </form>
+
+                <div class="sort">
+                    <div>
+                        <div>Сортировка:</div>
+                        <select class="select-control" aria-label="Сортировка">
+                            <option value="popular">Популярные</option>
+                            <option value="popular">Сначала дешёвые</option>
+                            <option value="popular">Сначала дорогие</option>
+                        </select>
+                    </div>
+
+                    <ul class="product-list">
+                        <li class="product-card">
+                            <a href="#"><img src="#" alt="Любительская селфи-палка"></a>
+                            <div>
+                                <span>Любительская селфи-палка</span>
+                                <span>500р</span>
+                            </div>
+                        </li>
+                        <li class="product-card">
+                            <a href="#"></a><img src="#" alt="Профессиональная селфи-палка"></a>
+                            <div>
+                                <span>Профессиональная селфи-палка</span>
+                                <span>1 500 р</span>
+                            </div>
+                        </li>
+                        <li class="product-card">
+                            <a href="#"></a><img src="#" alt="Непотопляемая селфи-палка"></a>
+                            <div>
+                                <span>Непотопляемая селфи-палка</span>
+                                <span>2 500 р</span>
+                            </div>
+                        </li>
+                        <li class="product-card">
+                            <a href="#"></a><img src="#" alt="Непотопляемая селфи-палка"></a>
+                            <div>
+                                <span>Селфи-палка «Следуй за мной»</span>
+                                <span>1 500 р</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <button>Загрузить ещё</button>
+
+                <ol class="catalog-pagination">
+                    <li class="catalog-pagination-page">
+                        <a href="#">Назад</a>
+                    </li>
+                    <li class="catalog-pagination">
+                        <a href="#">1</a>
+                    </li>
+                    <li class="catalog-pagination">
+                        <a href="#">2</a>
+                    </li>
+                    <li class="catalog-pagination">
+                        <a href="#">3</a>
+                    </li><li class="catalog-pagination">
+                        <a href="#">...</a>
+                    </li>
+                    <li class="catalog-pagination">
+                        <a href="#">Вперёд</a>
+                    </li>
+                </ol>
+            </section>
+        </main>
+
+        <footer>
+            <!-- Тот же, что и в indes.html -->
+        </footer>
+    </body>
+
+</html>
