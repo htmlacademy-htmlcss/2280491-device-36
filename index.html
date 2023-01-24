@@ -37,7 +37,9 @@
                     <div class="nav-item">
                         <div>
                             <span>Каталог товаров</span>
-                            <button class="catalog-opener"></button>
+                            <button class="catalog-opener" type="button">
+                                <span class="visually-hidden">Расскрыть каталог</span>
+                            </button>
                         </div>
                     </div>
 
@@ -58,28 +60,24 @@
 
         <main class="main-index">
 
-            <div class="slider-wraper">
-
-                <div class="slide-counter">01</div>
-
-                <div>
+            <ul class="slider-wraper">
+                <li>
+                    <span class="slide-counter">01</span>
                     <div class="slider-pic-block">
-                        <div>
-                            <img class="slider-pic" src="#" alt="картинка продукта">
-                            <button class="slider-prev" type="button">
-                                <span class="visually-hidden">Предыдущее фото</span>
-                            </button>
-                            <button class="slider-next" type="button">
-                                <span class="visually-hidden">Следующее фото</span>
-                            </button>
-                        </div>
+                        <img class="slider-pic" src="#" alt="картинка продукта">
+                        <button class="slider-prev" type="button">
+                            <span class="visually-hidden">Предыдущее фото</span>
+                        </button>
+                        <button class="slider-next" type="button">
+                            <span class="visually-hidden">Следующее фото</span>
+                        </button>
                     </div>
 
                     <section class="slide-info">
                         <div>
                             <h2>Порхает как бабочка, жалит как пчела!</h2>
                             <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-                               замаскированным под стандартную камеру.</p>
+                                замаскированным под стандартную камеру.</p>
                         </div>
                         <button type="button">Подробнее</button>
 
@@ -95,51 +93,46 @@
                             </div>
                         </div>
                     </section>
-                </div>
+                </li>
+                <!-- To do 2 slides -->
+            </ul>
 
-                <ol class="slider-pagination">
-                    <li class="slider-pagination-item">
-                      <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                        <span class="visually-hidden">1 фото</span>
-                      </button>
-                    </li>
-                    <li class="slider-pagination-item">
-                        <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                          <span class="visually-hidden">2 фото</span>
-                        </button>
-                    </li>
-                    <li class="slider-pagination-item">
-                        <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                          <span class="visually-hidden">3 фото</span>
-                        </button>
-                    </li>
-                </ol>
-            </div>
+            <ol class="slider-pagination">
+                <li class="slider-pagination-item">
+                    <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                    <span class="visually-hidden">1 фото</span>
+                    </button>
+                </li>
+                <li class="slider-pagination-item">
+                    <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                        <span class="visually-hidden">2 фото</span>
+                    </button>
+                </li>
+                <li class="slider-pagination-item">
+                    <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                        <span class="visually-hidden">3 фото</span>
+                    </button>
+                </li>
+            </ol>
 
             <div class="catalogue-categories-wraper">
                 <ul>
-                    <li class="category">
-                        <div><img src="#" alt="картинка изображающая виртуальную реальность"></div>
+                    <li class="category img-virtual-reality">
                         <p>Виртуальная реальность</p>
                     </li>
-                    <li class="category">
-                        <div><img src="#" alt="картинка изображающая моноподы для селфи"></div>
+                    <li class="category img-monopods-for-selfie">
                         <p>Моноподы для селфи</p>
                     </li>
-                    <li class="category">
-                        <div><img src="#" alt="картинка изображающая экшн камеры"></div>
+                    <li class="category img-action-cameras">
                         <p>Экшн камеры</p>
                     </li>
-                    <li class="category">
-                        <div><img src="#" alt="картинка изображающая фитнес-браслеты"></div>
+                    <li class="category img-fitness-bracelet">
                         <p>Фитнес-браслеты</p>
                     </li>
-                    <li class="category">
-                        <div><img src="#" alt="картинка изображающая умные часы"></div>
+                    <li class="category img-smart-watch">
                         <p>Умные часы</p>
                     </li>
-                    <li class="category">
-                        <div><img src="#" alt="картинка изображающая квадрокоптеры"></div>
+                    <li class="category img-quadcopter">
                         <p>Квадрокоптеры</p>
                     </li>
                 </ul>
@@ -162,7 +155,6 @@
             </div>
 
             <div class="rare-item-delivery-wraper">
-                <div class="rare-item-delivery-pic"></div>
                 <div>Доставим редкий товар под заказ</div>
                 <button type="button">i</button>
             </div>
