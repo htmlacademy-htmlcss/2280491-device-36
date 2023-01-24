@@ -8,10 +8,53 @@
     </head>
 
     <body>
-        <header>
-            <!-- Тот же, что и в indexs.html -->
+        <header class="page-header">
             <h1 class="visually-hidden">Каталог товаров</h1>
-            <img class="logo" src="#" alt="Логотип магазина"></img>
+            <span class="logo">device</span>
+
+            <nav class="navigation-menu">
+
+                <ul class="user-nav-bar">
+                    <li>
+                        <div class="search-panel">
+                            <input class="search-field" type="search" placeholder="Текст поиска">
+                            <button class="search-btn">Найти</button>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="user-nav-bar-link" href="#">Войти</a>
+                    </li>
+                    <li>
+                        <a class="user-nav-bar-link" href="#">Сравнить</a>
+                    </li>
+                    <li>
+                        <a class="user-nav-bar-link" href="#">Корзина</a>
+                    </li>
+                </ul>
+
+
+                <div class="main-nav">
+
+                    <div class="nav-item">
+                        <div>
+                            <span>Каталог товаров</span>
+                            <button class="catalog-opener"></button>
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li class="nav-item">
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Гарантия</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </header>
 
         <main>
@@ -24,7 +67,7 @@
 
             <div class="filter-and-sort">
 
-                <form class="filter" method="get">
+                <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
                     <div>Фильтр:</div>
 
                     <div>
@@ -155,7 +198,35 @@
         </main>
 
         <footer>
-            <!-- Тот же, что и в indes.html -->
+            <div>
+                <span class="logo">device</span>
+                <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            </div>
+
+            <div>
+                <ul>
+                    <li class="nav-item">
+                        <a href="#">Доставка</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Гарантии</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+
+                <div>
+                    <a href="#"><img src="#" alt="напишите нам"></a>
+                    <a href="#"><img src="#" alt="наш ютюб"></a>
+                    <a href="#"><img src="#" alt="наш твитер"></a>
+                </div>
+            </div>
+
+            <div>
+                <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+                <p class="about-text"><a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+            </div>
         </footer>
     </body>
 
