@@ -37,10 +37,10 @@
                 <div class="main-nav">
 
                     <div class="nav-item">
-                        <div>
-                            <span>Каталог товаров</span>
-                            <button class="catalog-opener"></button>
-                        </div>
+                        <span>Каталог товаров</span>
+                        <button class="catalog-opener" type="button">
+                            <span class="visually-hidden">Расскрыть каталог</span>
+                        </button>
                     </div>
 
                     <ul>
@@ -84,28 +84,20 @@
                                 <label for="black">Чёрный</label>
                             </li>
                             <li>
-                                <div>
-                                    <input type="checkbox" id="white" name="white" checked>
-                                    <label for="white">Белый</label>
-                                </div>
+                                <input type="checkbox" id="white" name="white" checked>
+                                <label for="white">Белый</label>
                             </li>
                             <li>
-                                <div>
-                                    <input type="checkbox" id="blue" name="blue">
-                                    <label for="blue">Синий</label>
-                                </div>
+                                <input type="checkbox" id="blue" name="blue">
+                                <label for="blue">Синий</label>
                             </li>
                             <li>
-                                <div>
-                                    <input type="checkbox" id="red" name="red">
-                                    <label for="red">Красный</label>
-                                </div>
+                                <input type="checkbox" id="red" name="red">
+                                <label for="red">Красный</label>
                             </li>
                             <li>
-                                <div>
-                                    <input type="checkbox" id="pink" name="pink">
-                                    <label for="pink">Розовый</label>
-                                </div>
+                                <input type="checkbox" id="pink" name="pink">
+                                <label for="pink">Розовый</label>
                             </li>
                         </ul>
                     </fieldset>
@@ -136,8 +128,12 @@
                             <option value="popular">Сначала дорогие</option>
                         </select>
                         <div>
-                            <button type="button" class="arrow-up"></button>
-                            <button type="button" class="arrow-down"></button>
+                            <button type="button" class="arrow-up">
+                                <span class="visually-hidden">Вернуться к началу.</span>
+                            </button>
+                            <button type="button" class="arrow-down">
+                                <span class="visually-hidden">Вернуться в конец.</span>
+                            </button>
                         </div>
                     </div>
 
