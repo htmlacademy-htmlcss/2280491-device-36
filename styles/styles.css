@@ -28,4 +28,136 @@ body {
     line-height: 30px;
     color: #000000;
     background-color: #ffffff;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+p {
+    color: #444444;
+}
+
+.colored-btn {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+/* Navigation */
+
+.user-nav-bar-link {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav-item span, .nav-item a {
+    font-family: "Raleway", sans-serif;
+    line-height: 21px;
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.search-field::placeholder {
+    font-size: 16px;
+    color: #000000;
+    opacity: 0.3;
+    line-height: 20px;
+}
+
+.search-btn {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/* Slider */
+
+.slide-counter {
+    font-family: "Rubik", sans-serif;
+    font-size: 180px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.product-param {
+    font-size: 36px;
+}
+
+.product-param-descr {
+    font-size: 16px;
+    color: #444444;
+}
+
+/* Categories */
+
+.virtual-reality::before {
+    background-image: url("../images/categories/category-1.svg");
+}
+
+.catalogue-categories-wraper p {
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+}
+
+/* Rare item delivery */
+
+.rare-item-delivery-wraper p {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+/* About */
+
+.way-of-delivery {
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+}
+
+/* Contacts */
+
+.phone-number {
+    color: #444444;
+}
+
+/* Newsletter */
+
+.newsletter-input::placeholder {
+    color: #444444;
+}
+
+/* footer */
+
+footer {
+    background-color: #444444;
+    color: #ffffff;
+    width: 100%;
+}
+
+.address-footer {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.phone-number-footer {
+    color: #ffffff;
 }
