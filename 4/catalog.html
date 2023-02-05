@@ -19,40 +19,40 @@
                 <ul class="user-nav-bar">
                     <li>
                         <div class="search-panel">
-                            <input class="search-field" type="search" placeholder="Текст поиска">
-                            <button class="search-btn">Найти</button>
+                            <input class="text-small search-field" type="search" placeholder="Поиск по сайту">
+                            <button class="text-small search-btn">Найти</button>
                         </div>
                     </li>
                     <li>
-                        <a class="user-nav-bar-link" href="#">Войти</a>
+                        <a class="text user-nav-bar-link" href="#">Войти</a>
                     </li>
                     <li>
-                        <a class="user-nav-bar-link" href="#">Сравнить</a>
+                        <a class="text user-nav-bar-link" href="#">Сравнить</a>
                     </li>
                     <li>
-                        <a class="user-nav-bar-link" href="#">Корзина</a>
+                        <a class="text user-nav-bar-link" href="#">Корзина</a>
                     </li>
                 </ul>
 
 
                 <div class="main-nav">
 
-                    <div class="nav-item">
-                        <span>Каталог товаров</span>
+                    <div>
+                        <span class="main-menu-item">Каталог товаров</span>
                         <button class="catalog-opener" type="button">
                             <span class="visually-hidden">Расскрыть каталог</span>
                         </button>
                     </div>
 
                     <ul>
-                        <li class="nav-item">
-                            <a href="#">Доставка</a>
+                        <li>
+                            <a class="main-menu-item" href="#">Доставка</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#">Гарантия</a>
+                        <li>
+                            <a class="main-menu-item" href="#">Гарантия</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#">Контакты</a>
+                        <li>
+                            <a class="main-menu-item" href="#">Контакты</a>
                         </li>
                     </ul>
                 </div>
@@ -61,16 +61,16 @@
 
         <main>
             <h2>Моноподы для селфи</h2>
-            <ul class="breadcrumbs">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="#">Каталог товаров</a></li>
-                <li><a href="#">Моноподы для селфи</a></li>
+            <ul>
+                <li><a class="text-small breadcrumbs" href="index.html">Главная</a></li>
+                <li><a class="text-small breadcrumbs" href="#">Каталог товаров</a></li>
+                <li><a class="text-small breadcrumbs" href="#">Моноподы для селфи</a></li>
             </ul>
 
             <div class="filter-and-sort">
 
                 <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
-                    <div class="filter-title">Фильтр:</div>
+                    <div class="filter-and-sort">Фильтр:</div>
 
                     <div>
                         <label class="filter-parameter" for="cost">Стоимость</label>
@@ -79,7 +79,7 @@
 
                     <fieldset>
                         <legend class="filter-parameter">Цвет</legend>
-                        <ul>
+                        <ul class="text-small color-options">
                             <li>
                                 <input type="checkbox" id="black" name="black" checked>
                                 <label for="black">Чёрный</label>
@@ -87,7 +87,6 @@
                             <li>
                                 <input type="checkbox" id="white" name="white" checked>
                                 <label for="white">Белый</label>
-                            </li>
                             <li>
                                 <input type="checkbox" id="blue" name="blue">
                                 <label for="blue">Синий</label>
@@ -105,7 +104,7 @@
 
                     <fieldset>
                         <legend class="filter-parameter">Bluetooth</legend>
-                        <div>
+                        <div class="text-small bluetooth-presence">
                             <div>
                                 <input type="radio" id="bluetooth-yes" checked>
                                 <label for="bluetooth-yes">Есть</label>
@@ -122,11 +121,11 @@
 
                 <div class="sort">
                     <div>
-                        <div class="sort-title">Сортировка:</div>
-                        <select class="select-control" aria-label="Сортировка">
+                        <div class="filter-and-sort">Сортировка:</div>
+                        <select class="text sort-option" aria-label="Сортировка">
                             <option value="popular" selected>Популярные</option>
-                            <option value="popular">Сначала дешёвые</option>
-                            <option value="popular">Сначала дорогие</option>
+                            <option value="cheap">Сначала дешёвые</option>
+                            <option value="expensive">Сначала дорогие</option>
                         </select>
                         <div>
                             <button type="button" class="arrow-up">
@@ -143,28 +142,28 @@
                             <a href="#"><img src="images/products/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка"></a>
                             <div>
                                 <span class="product-name">Любительская селфи-палка</span>
-                                <span class="product-price">500 р</span>
+                                <span class="text product-price">500 р</span>
                             </div>
                         </li>
                         <li class="product-card">
-                            <a href="#"></a><img src="images/products/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка"></a>
+                            <a href="#"><img src="images/products/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка"></a>
                             <div>
                                 <span class="product-name">Профессиональная селфи-палка</span>
-                                <span class="product-price">1 500 р</span>
+                                <span class="text product-price">1 500 р</span>
                             </div>
                         </li>
                         <li class="product-card">
-                            <a href="#"></a><img src="images/products/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка"></a>
+                            <a href="#"><img src="images/products/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка"></a>
                             <div>
                                 <span class="product-name">Непотопляемая селфи-палка</span>
-                                <span class="product-price">2 500 р</span>
+                                <span class="text product-price">2 500 р</span>
                             </div>
                         </li>
                         <li class="product-card">
-                            <a href="#"></a><img src="images/products/product-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»"></a>
+                            <a href="#"><img src="images/products/product-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»"></a>
                             <div>
                                 <span class="product-name">Селфи-палка «Следуй за мной»</span>
-                                <span class="product-price">1 500 р</span>
+                                <span class="text product-price">1 500 р</span>
                             </div>
                         </li>
                     </ul>
@@ -178,19 +177,19 @@
                 </div>
                     <ol>
                         <li>
-                            <a class="page-number active" href="#">1</a>
+                            <a class="text-small page-number page-number-active" href="#">1</a>
                         </li>
                         <li>
-                            <a class="page-number" href="#">2</a>
+                            <a class="text-small page-number" href="#">2</a>
                         </li>
                         <li>
-                            <a class="page-number" href="#">3</a>
+                            <a class="text-small page-number" href="#">3</a>
                         </li>
                         <li>
-                            <a class="page-number" href="#">...</a>
+                            <a class="text-small page-number" href="#">...</a>
                         </li>
                         <li>
-                            <a class="page-number" href="#">15</a>
+                            <a class="text-small page-number" href="#">15</a>
                         </li>
                     </ol>
                 <div>
@@ -203,19 +202,19 @@
         <footer>
             <div>
                 <img class="logo-yellow" src="images/logo-yellow.png" width="145" height="36" alt="device">
-                <p class="address-footer">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+                <p class="text-small address-footer">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
             </div>
 
             <div>
                 <ul>
-                    <li class="nav-item">
-                        <a href="#">Доставка</a>
+                    <li>
+                        <a class="main-menu-item main-menu-footer" href="#">Доставка</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#">Гарантии</a>
+                    <li>
+                        <a class="main-menu-item main-menu-footer" href="#">Гарантии</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#">Контакты</a>
+                    <li>
+                        <a class="main-menu-item main-menu-footer" href="#">Контакты</a>
                     </li>
                 </ul>
 
@@ -227,7 +226,7 @@
             </div>
 
             <div>
-                <a class="phone-number-footer" href="tel:+78128121212">+7 (812) 812-12-12</a>
+                <a class="text-small phone-number-footer" href="tel:+78128121212">+7 (812) 812-12-12</a>
                 <a class="htmlacademy-link" href="https://htmlacademy.ru/">
                     <img src="images/logo-html-academy.png" width="115" height="33" alt="html academy">
                 </a>
