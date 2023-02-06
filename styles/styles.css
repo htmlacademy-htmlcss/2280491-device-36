@@ -1,0 +1,321 @@
+@font-face {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+}
+
+.title-small {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #444444;
+}
+
+.text {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
+}
+
+.text-small {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.colored-btn {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+/* Navigation */
+
+.navigation-menu {
+    background-color: #FFE17F;
+}
+
+.user-nav-bar-link {
+    color: #000000;;
+    text-decoration: none;
+}
+
+.main-menu-item {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+}
+
+.search-field::placeholder {
+    color: #000000;
+    opacity: 0.3;
+}
+
+.search-btn {
+    color: #000000;
+}
+
+/* Slider */
+
+.slide-counter {
+    font-family: "Rubik", sans-serif;
+    font-size: 180px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.product-param {
+    font-size: 36px;
+}
+
+.product-param-descr {
+    line-height: 30px;
+    color: #444444;
+}
+
+/* Categories */
+
+.catalogue-categories::before {
+    content:"";
+    width: 160px;
+    height: 160px;
+    display: block;
+    background-color: #FFE17F;
+    background-size: 160px;
+    background-repeat: no-repeat;
+}
+
+.virtual-reality::before {
+    background-image: url("../images/categories/category-1.svg");
+}
+
+.monopods-for-selfie::before {
+    background-image: url("../images/categories/category-2.svg");
+}
+
+.action-cameras::before {
+    background-image: url("../images/categories/category-3.svg");
+}
+
+.fitness-bracelet::before {
+    background-image: url("../images/categories/category-4.svg");
+}
+
+.smart-watch::before {
+    background-image: url("../images/categories/category-5.svg");
+}
+
+.quadcopter::before {
+    background-image: url("../images/categories/category-6.svg");
+}
+
+.catalogue-categories-wraper p {
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+}
+
+/* Rare item delivery */
+
+.rare-item-delivery-wraper span {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+/* tabs */
+
+.delivery-wraper button:active {
+    background-color: #000000;
+    color: #FFE17F;
+}
+
+.tabs-content {
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding-right: 250px;
+}
+
+.delivery-tab {
+    background-image: url(../images/delivery.svg);
+}
+
+.warranty-tab {
+    background-image: url(../images/warranty.svg);
+}
+
+.credit-tab {
+    background-image: url(../images/credit.svg);
+}
+
+/* About */
+
+.way-of-delivery {
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+}
+
+/* Newsletter */
+
+.newsletter-input::placeholder {
+    opacity: 0.5;
+}
+
+/* Catalog */
+
+.breadcrumbs {
+    text-decoration: none;
+}
+
+.filter-and-sort {
+    font-family: "Raleway", sans-serif;;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.sort-option {
+    color: #000000;
+}
+
+.filter-parameter {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    text-transform: none;
+}
+
+.color-options {
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.bluetooth-presence {
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.product-name {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    text-transform: none;
+}
+
+.product-price {
+    line-height: 21px;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.download-more-btn {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.page-back-forward {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+}
+
+.page-back-forward.disabled {
+    color: #444444;
+    opacity: 0.3;
+}
+
+.page-number {
+    color: #444444;
+    opacity: 0.3;
+    text-decoration: none;
+}
+
+.page-number-active {
+    opacity: 0.6;
+}
+
+/* footer */
+
+footer {
+    background-color: #444444;
+    color: #ffffff;
+    width: 100%;
+}
+
+.address-footer {
+    color: #ffffff;
+}
+
+.main-menu-footer {
+    color: #ffffff;
+
+}
+
+.phone-number-footer {
+    color: #ffffff;
+}
