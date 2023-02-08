@@ -37,7 +37,7 @@
                 <div class="main-nav">
 
                     <div>
-                        <span class="main-menu-item">Каталог товаров</span>
+                        <span class="main-nav-item">Каталог товаров</span>
                         <button class="catalog-opener" type="button">
                             <span class="visually-hidden">Расскрыть каталог</span>
                         </button>
@@ -45,13 +45,13 @@
 
                     <ul>
                         <li>
-                            <a class="main-menu-item" href="#">Доставка</a>
+                            <a class="main-nav-item" href="#">Доставка</a>
                         </li>
                         <li>
-                            <a class="main-menu-item" href="#">Гарантия</a>
+                            <a class="main-nav-item" href="#">Гарантия</a>
                         </li>
                         <li>
-                            <a class="main-menu-item" href="#">Контакты</a>
+                            <a class="main-nav-item" href="#">Контакты</a>
                         </li>
                     </ul>
                 </div>
@@ -59,12 +59,15 @@
         </header>
 
         <main>
-            <h2>Моноподы для селфи</h2>
-            <ul>
-                <li><a class="text-small breadcrumbs" href="index.html">Главная</a></li>
-                <li><a class="text-small breadcrumbs" href="#">Каталог товаров</a></li>
-                <li><a class="text-small breadcrumbs" href="#">Моноподы для селфи</a></li>
-            </ul>
+            <div class="breadcrubms-and-title">
+                <h2>Моноподы для селфи</h2>
+                <ul class="breadcrumbs-wrapper">
+                    <li><a class="text-small breadcrumbs" href="index.html">Главная</a></li>
+                    <li><a class="text-small breadcrumbs" href="#">Каталог товаров</a></li>
+                    <li><a class="text-small breadcrumbs" href="#">Моноподы для селфи</a></li>
+                </ul>
+            </div>
+
 
             <div class="filter-and-sort">
 
@@ -166,65 +169,67 @@
                             </div>
                         </li>
                     </ul>
+
+                    <button class="download-more-btn" type="button">Загрузить ещё</button>
+
+                    <div class="pagination-wrapper">
+                        <div>
+                            <a class="page-back-forward disabled" href="#">Назад</a>
+                        </div>
+
+                        <ol>
+                            <li>
+                                <a class="text-small page-number page-number-active" href="#">1</a>
+                            </li>
+                            <li>
+                                <a class="text-small page-number" href="#">2</a>
+                            </li>
+                            <li>
+                                <a class="text-small page-number" href="#">3</a>
+                            </li>
+                            <li>
+                                <a class="text-small page-number" href="#">...</a>
+                            </li>
+                            <li>
+                                <a class="text-small page-number" href="#">15</a>
+                            </li>
+                        </ol>
+
+                        <div>
+                            <a class="page-back-forward" href="#">Вперёд</a>
+                        </div>
+                    </div>
                 </div>
-
-                <button class="download-more-btn" type="button">Загрузить ещё</button>
-
-
-                <div>
-                    <a class="page-back-forward disabled" href="#">Назад</a>
-                </div>
-                    <ol>
-                        <li>
-                            <a class="text-small page-number page-number-active" href="#">1</a>
-                        </li>
-                        <li>
-                            <a class="text-small page-number" href="#">2</a>
-                        </li>
-                        <li>
-                            <a class="text-small page-number" href="#">3</a>
-                        </li>
-                        <li>
-                            <a class="text-small page-number" href="#">...</a>
-                        </li>
-                        <li>
-                            <a class="text-small page-number" href="#">15</a>
-                        </li>
-                    </ol>
-                <div>
-                    <a class="page-back-forward" href="#">Вперёд</a>
-                </div>
-
             </div>
         </main>
 
-        <footer>
-            <div>
+        <footer class="page-footer">
+            <div class="address-and-logo-footer">
                 <img class="logo-yellow" src="images/logo-yellow.png" width="145" height="36" alt="device">
                 <p class="text-small address-footer">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
             </div>
 
-            <div>
+            <div class="nav-footer">
                 <ul>
                     <li>
-                        <a class="main-menu-item main-menu-footer" href="#">Доставка</a>
+                        <a class="main-nav-item main-nav-footer" href="#">Доставка</a>
                     </li>
                     <li>
-                        <a class="main-menu-item main-menu-footer" href="#">Гарантии</a>
+                        <a class="main-nav-item main-nav-footer" href="#">Гарантии</a>
                     </li>
                     <li>
-                        <a class="main-menu-item main-menu-footer" href="#">Контакты</a>
+                        <a class="main-nav-item main-nav-footer" href="#">Контакты</a>
                     </li>
                 </ul>
 
-                <div>
+                <div class="social-links-footer">
                     <a href="#"><span class="visually-hidden">telegram</span></a>
                     <a href="#"><span class="visually-hidden">youtube</span></a>
                     <a href="#"><span class="visually-hidden">twitter</span></a>
                 </div>
             </div>
 
-            <div>
+            <div class="phone-and-html-academy-footer">
                 <a class="text-small phone-number-footer" href="tel:+78128121212">+7 (812) 812-12-12</a>
                 <a class="htmlacademy-link" href="https://htmlacademy.ru/">
                     <img src="images/logo-html-academy.png" width="115" height="33" alt="html academy">
