@@ -283,6 +283,8 @@ body {
 
 .tabs-wrapper ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .delivery-wrapper button:active {
@@ -316,6 +318,10 @@ body {
 }
 
 /* About and Contacts */
+
+.about-wrapper {
+    padding-right: 108px;
+}
 
 .about-contacts-wrapper {
     width: 1160px;
@@ -386,14 +392,8 @@ body {
     display: flex;
 }
 
-.sort {
-    width: 840px;
-    display: flex;
-    flex-direction: column;
-}
-
-.sort-option {
-    color: #000000;
+.filter {
+    padding: 0 60px;
 }
 
 .filter-parameter {
@@ -414,6 +414,20 @@ body {
 .bluetooth-presence {
     text-transform: none;
     letter-spacing: 0;
+}
+
+.sort {
+    width: 840px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sort-option {
+    color: #000000;
+}
+
+.product-list {
+    padding: 0;
 }
 
 .product-name {
