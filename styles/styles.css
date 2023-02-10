@@ -82,9 +82,16 @@ body {
     text-transform: uppercase;
 }
 
-/* .visually-hidden {
-    display: none;
-} */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 .page-header {
     width: 1160px;
@@ -101,18 +108,61 @@ body {
     background-color: #FFE17F;
 }
 
+.search-panel {
+    width: 517px;
+
+    padding-right: 26px;
+
+    display: flex;
+}
+
+.search-field {
+    width: 358px;
+}
+
+.search-field::placeholder {
+    color: #000000;
+    opacity: 0.3;
+}
+
+.search-btn {
+    width: 160px;
+
+    color: #000000;
+}
+
 .user-nav-bar {
-    list-style: none;
-    margin: 0 auto;
-    padding: 51px 60px 45px;
+    list-style-type: none;
+    padding: 40px 60px 30px;
 
     display: flex;
     align-items: center;
 }
 
+.user-nav-bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    flex: 1;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
 .user-nav-bar-link {
     color: #000000;;
     text-decoration: none;
+
+    display: block;
+}
+
+.user-nav-bar li:first-child {
+    margin-right: auto;
+}
+
+.user-nav-bar li:nth-child(2) {
+    padding-right: 36px;
 }
 
 .main-nav {
@@ -126,7 +176,7 @@ body {
 .main-nav ul {
     width: 471px;
 
-    list-style: none;
+    list-style-type: none;
     padding: 0;
     margin: 0;
 
@@ -143,15 +193,6 @@ body {
     text-transform: uppercase;
     color: #000000;
     text-decoration: none;
-}
-
-.search-field::placeholder {
-    color: #000000;
-    opacity: 0.3;
-}
-
-.search-btn {
-    color: #000000;
 }
 
 .main-container {
@@ -193,6 +234,13 @@ body {
     display: flex;
 }
 
+.slider-pagination {
+    margin: 0 auto;
+    padding: 0;
+
+    display: flex;
+}
+
 /* Categories */
 
 .catalogue-categories-wrapper {
@@ -201,7 +249,7 @@ body {
 }
 
 .catalogue-categories-wrapper ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
     margin: 0;
 
@@ -280,7 +328,7 @@ body {
 }
 
 .tabs-wrapper ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
@@ -367,7 +415,7 @@ body {
 }
 
 .breadcrumbs-wrapper {
-    list-style: none;
+    list-style-type: none;
 }
 
 .breadcrumbs {
@@ -508,7 +556,7 @@ body {
 
 .main-nav-footer-wrapper {
     display: flex;
-    list-style: none;
+    list-style-type: none;
     padding: 137px 0 62px;
     margin: 0;
 }
@@ -522,7 +570,12 @@ body {
 }
 
 .social-links-footer {
+    list-style-type: none;
+
+    padding-left: 0;
     padding-bottom: 61px;
+
+    display: flex;
 }
 
 .address-footer {
