@@ -374,17 +374,46 @@ body {
 
 .rare-item-delivery-wrapper {
     background: #F0F0F0;
+    height: 100px;
 
     width: 1160px;
-    margin: 0 auto;
+    margin: 0 auto 70px;
+
+    position: relative;
 }
 
-.rare-item-delivery-wrapper span {
+.rare-item-delivery-wrapper div {
     font-weight: 800;
     font-size: 20px;
     line-height: 23px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+
+    padding: 40px 125px;
+
+    text-align: center;
+}
+
+.rare-item-delivery-wrapper div::before {
+    content:"";
+    width: 125px;
+    height: 100px;
+    display: block;
+    background-color: #FFE17F;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.rare-item-delivery-wrapper button {
+    width: 125px;
+    height: 100px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 /* tabs */
@@ -418,6 +447,7 @@ body {
 
 .tabs-item-content p {
     width: 452px;
+    margin: 0;
 }
 
 .delivery-tab {
@@ -456,31 +486,123 @@ body {
     padding: 72.5px 63px 72.5px 116px;
 }
 
-/* About and Contacts */
-
-.about-wrapper {
-    padding-right: 108px;
+.tabs-content-show h2 {
+    margin-bottom: 34px;
 }
+
+/* Sections About and Contacts */
 
 .about-contacts-wrapper {
     width: 1160px;
-    margin: 0 auto;
+    margin: 0 auto 70px;
 
     display: flex;
+}
+
+/* Section About */
+
+.about-wrapper {
+    margin-right: 108px;
+
+    position: relative;
+}
+
+.about-wrapper h2 {
+    margin: 47px 0;
+}
+
+.about-wrapper h2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 84px;
+    height: 7px;
+
+    background: black;
+}
+
+.about-wrapper p {
+    padding: 0 0 30px;
+    margin: 0;
 }
 
 .way-of-delivery {
     font-weight: 700;
     line-height: 20px;
     letter-spacing: -0.02em;
+
+    list-style-position: inside;
+
+    padding-bottom: 19px;
 }
+
+.way-of-delivery::marker {
+    color: #FFC700;
+}
+
+.way-of-delivery:last-child {
+    padding-bottom: 0;
+}
+
+.about-wrapper ul {
+    padding: 0;
+    margin: 0 0 30px;
+}
+
+/* Section Contacts */
+
+.contacts-wrapper {
+    position: relative;
+}
+
+.contacts-wrapper h2 {
+    margin: 47px 0;
+}
+
+.contacts-wrapper h2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 84px;
+    height: 7px;
+
+    background: black;
+}
+
+.contacts-wrapper p {
+    margin: 0 0 30px;
+}
+
+.contacts-wrapper h3 {
+    margin: 0 0 15px;
+}
+
+.contacts-location {
+    margin-bottom: 30px;
+}
+
+.contacts-location p {
+    margin: 0;
+}
+
+.contacts-working-hours {
+    margin-bottom: 30px;
+}
+
+.contacts-working-hours ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 
 /* Newsletter */
 
 .newsletter-wrapper {
     margin: 0 auto;
     background: #F0F0F0;
-    padding: 0 calc((100% - 1160px) / 2);
+    padding: 64px calc((100% - 1160px) / 2) 56px;
 
     display: flex;
     flex-direction: column;
@@ -489,15 +611,44 @@ body {
 .newsletter-subscribtion {
     display: flex;
     justify-content: space-between;
+
+    margin-bottom: 144px;
+}
+
+.newsletter-subscribtion h2 {
+    margin-right: 252px;
+}
+
+.newsletter-subscribtion p {
+    margin: 10px 0;
 }
 
 .subscribe-field {
+    height: 57px;
+
     display: flex;
     justify-content: space-between;
 }
 
+.subscribe-field form {
+    display: flex;
+}
+
+.subscribe-field input {
+    width: 510px;
+}
+
+.subscribe-field button {
+    width: 253px;
+}
+
 .newsletter-input::placeholder {
     opacity: 0.5;
+    padding-left: 16px;
+}
+
+.subscribe-field span {
+    padding: 13.5px 0;
 }
 
 /* Catalog */
