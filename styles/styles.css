@@ -129,7 +129,6 @@ body {
 }
 
 .search-field::placeholder {
-    color: #000000;
     opacity: 0.3;
 }
 
@@ -180,6 +179,26 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
+.main-nav-catalog {
+    padding: 0 60px 36px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav-catalog ul {
+    width: 471px;
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .main-nav ul {
     width: 471px;
@@ -636,6 +655,8 @@ body {
 
 .subscribe-field input {
     width: 510px;
+
+    padding-left: 16px;
 }
 
 .subscribe-field button {
@@ -644,7 +665,6 @@ body {
 
 .newsletter-input::placeholder {
     opacity: 0.5;
-    padding-left: 16px;
 }
 
 .subscribe-field span {
@@ -656,14 +676,26 @@ body {
 .breadcrubms-and-title {
     width: 1160px;
     margin: 0 auto;
+    padding: 35px 0 35px 60px;
+
+    box-sizing: border-box;
+}
+
+.breadcrubms-and-title h2 {
+    margin-bottom: 16px;
 }
 
 .breadcrumbs-wrapper {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
 }
 
 .breadcrumbs {
     text-decoration: none;
+    padding-right: 16px;
 }
 
 .filter-and-sort {
@@ -676,14 +708,13 @@ body {
 
     background: #F0F0F0;
 
-    margin: 0 auto;
     padding: 0 calc((100% - 1160px) / 2);
 
     display: flex;
 }
 
 .filter {
-    padding: 0 60px;
+    margin: 0 60px;
 }
 
 .filter-parameter {
@@ -784,6 +815,8 @@ body {
 .address-and-logo-footer {
     width: 239px;
     padding: 62px 0 77px;
+
+    position: relative;
 }
 
 .logo-yellow {
@@ -825,6 +858,17 @@ body {
 .address-footer {
     color: #ffffff;
     margin: 0;
+}
+
+.address-footer::after {
+    content: "";
+    position: absolute;
+    bottom: 77px;
+    left: 0;
+    width: 80px;
+    height: 7px;
+
+    background: #FFC700;
 }
 
 .main-nav-footer {
