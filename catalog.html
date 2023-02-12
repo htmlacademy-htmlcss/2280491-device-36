@@ -73,14 +73,14 @@
             <div class="filter-and-sort">
 
                 <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
-                    <div class="filter-and-sort">Фильтр:</div>
+                    <div class="filter-title">Фильтр:</div>
 
-                    <div>
-                        <label class="filter-parameter" for="cost">Стоимость</label>
+                    <div class="price-parameter-wrapper">
+                        <label class="filter-parameter" for="price">Стоимость</label>
                         <input type="range" min="0" max="5000" step="1" id="cost">
                     </div>
 
-                    <fieldset>
+                    <fieldset class="color-parameter-wrapper">
                         <legend class="filter-parameter">Цвет</legend>
                         <ul class="text-small color-options">
                             <li>
@@ -105,10 +105,10 @@
                         </ul>
                     </fieldset>
 
-                    <fieldset>
+                    <fieldset class="bluetooth-parameter-wrapper">
                         <legend class="filter-parameter">Bluetooth</legend>
                         <div class="text-small bluetooth-presence">
-                            <div>
+                            <div class="bluetooth-yes-wrapper">
                                 <input type="radio" id="bluetooth-yes" checked>
                                 <label for="bluetooth-yes">Есть</label>
                             </div>
@@ -123,8 +123,8 @@
                 </form>
 
                 <div class="sort">
-                    <div>
-                        <div class="filter-and-sort">Сортировка:</div>
+                    <div class="sort-top-wrapper">
+                        <div class="sort-title">Сортировка:</div>
                         <select class="text sort-option" aria-label="Сортировка">
                             <option value="popular" selected>Популярные</option>
                             <option value="cheap">Сначала дешёвые</option>
@@ -140,62 +140,64 @@
                         </div>
                     </div>
 
-                    <ul class="product-list">
-                        <li class="product-card">
-                            <a href="#"><img src="images/products/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка"></a>
-                            <div>
-                                <span class="product-name">Любительская селфи-палка</span>
-                                <span class="text product-price">500 р</span>
-                            </div>
-                        </li>
-                        <li class="product-card">
-                            <a href="#"><img src="images/products/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка"></a>
-                            <div>
-                                <span class="product-name">Профессиональная селфи-палка</span>
-                                <span class="text product-price">1 500 р</span>
-                            </div>
-                        </li>
-                        <li class="product-card">
-                            <a href="#"><img src="images/products/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка"></a>
-                            <div>
-                                <span class="product-name">Непотопляемая селфи-палка</span>
-                                <span class="text product-price">2 500 р</span>
-                            </div>
-                        </li>
-                        <li class="product-card">
-                            <a href="#"><img src="images/products/product-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»"></a>
-                            <div>
-                                <span class="product-name">Селфи-палка «Следуй за мной»</span>
-                                <span class="text product-price">1 500 р</span>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <button class="download-more-btn" type="button">Загрузить ещё</button>
-
-                    <div class="pagination-wrapper">
-
-                        <a class="page-back-forward disabled" href="#">Назад</a>
-
-                        <ol>
-                            <li>
-                                <a class="text-small page-number page-number-active" href="#">1</a>
+                    <div class="products-wrapper">
+                        <ul class="product-list">
+                            <li class="product-card">
+                                <a href="#"><img src="images/products/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка"></a>
+                                <div>
+                                    <span class="product-name">Любительская селфи-палка</span>
+                                    <span class="text product-price">500 р</span>
+                                </div>
                             </li>
-                            <li>
-                                <a class="text-small page-number" href="#">2</a>
+                            <li class="product-card">
+                                <a href="#"><img src="images/products/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка"></a>
+                                <div>
+                                    <span class="product-name">Профессиональная селфи-палка</span>
+                                    <span class="text product-price">1 500 р</span>
+                                </div>
                             </li>
-                            <li>
-                                <a class="text-small page-number" href="#">3</a>
+                            <li class="product-card">
+                                <a href="#"><img src="images/products/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка"></a>
+                                <div>
+                                    <span class="product-name">Непотопляемая селфи-палка</span>
+                                    <span class="text product-price">2 500 р</span>
+                                </div>
                             </li>
-                            <li>
-                                <a class="text-small page-number" href="#">...</a>
+                            <li class="product-card">
+                                <a href="#"><img src="images/products/product-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»"></a>
+                                <div>
+                                    <span class="product-name">Селфи-палка «Следуй за мной»</span>
+                                    <span class="text product-price">1 500 р</span>
+                                </div>
                             </li>
-                            <li>
-                                <a class="text-small page-number" href="#">15</a>
-                            </li>
-                        </ol>
+                        </ul>
 
-                        <a class="page-back-forward" href="#">Вперёд</a>
+                        <button class="download-more-btn" type="button">Загрузить ещё</button>
+
+                        <div class="pagination-wrapper">
+
+                            <a class="page-back-forward disabled" href="#">Назад</a>
+
+                            <ol>
+                                <li>
+                                    <a class="text-small page-number page-number-active" href="#">1</a>
+                                </li>
+                                <li>
+                                    <a class="text-small page-number" href="#">2</a>
+                                </li>
+                                <li>
+                                    <a class="text-small page-number" href="#">3</a>
+                                </li>
+                                <li>
+                                    <a class="text-small page-number" href="#">...</a>
+                                </li>
+                                <li>
+                                    <a class="text-small page-number" href="#">15</a>
+                                </li>
+                            </ol>
+
+                            <a class="page-back-forward" href="#">Вперёд</a>
+                        </div>
                     </div>
                 </div>
             </div>

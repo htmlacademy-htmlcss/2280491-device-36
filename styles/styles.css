@@ -677,7 +677,6 @@ body {
     width: 1160px;
     margin: 0 auto;
     padding: 35px 0 35px 60px;
-
     box-sizing: border-box;
 }
 
@@ -687,6 +686,7 @@ body {
 
 .breadcrumbs-wrapper {
     list-style-type: none;
+
     margin: 0;
     padding: 0;
 
@@ -713,8 +713,15 @@ body {
     display: flex;
 }
 
+/* filter-block */
+
 .filter {
     margin: 0 60px;
+    padding-top: 25px;
+}
+
+.filter-title {
+    margin-bottom: 60px;
 }
 
 .filter-parameter {
@@ -727,15 +734,73 @@ body {
     text-transform: none;
 }
 
+.price-parameter-wrapper {
+    margin-bottom: 35px;
+    padding-top: 12px;
+
+    border-top: solid #000000;
+}
+
+.price-parameter-wrapper input {
+    margin: 20px 0 0;
+}
+
+.color-parameter-wrapper {
+    border: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.color-parameter-wrapper legend {
+    border-top: solid;
+    width: 100%;
+    padding: 12px 0 0;
+}
+
 .color-options {
     text-transform: none;
     letter-spacing: 0;
+
+    list-style-type: none;
+
+    margin-top: 20px;
+    margin-bottom: 35px;
+    padding: 0;
+}
+
+.color-options li {
+    margin-bottom: 17px;
+}
+
+.color-options li:last-child {
+    margin-bottom: 17px;
+}
+
+.bluetooth-parameter-wrapper {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bluetooth-parameter-wrapper legend {
+    border-top: solid;
+    width: 100%;
+    padding: 12px 0 0;
 }
 
 .bluetooth-presence {
     text-transform: none;
     letter-spacing: 0;
+
+    margin-bottom: 35px;
 }
+
+.bluetooth-yes-wrapper {
+    margin: 20px 0;
+}
+
+/* Sort block */
 
 .sort {
     width: 840px;
@@ -745,6 +810,19 @@ body {
 
 .sort-option {
     color: #000000;
+}
+
+.sort-top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 40px;
+}
+
+/* Products */
+
+.products-wrapper {
+    background-color: white;
+    padding: 70px 40px 78px;
 }
 
 .product-list {
@@ -773,6 +851,27 @@ body {
     line-height: 19px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+
+    background-color: white;
+
+    width: 100%;
+
+    padding: 18px 0;
+    margin-bottom: 44px;
+}
+
+.pagination-wrapper {
+    background-color: #EBEBEB;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagination-wrapper ol {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
 }
 
 .page-back-forward {
@@ -784,6 +883,8 @@ body {
     text-transform: uppercase;
     color: #000000;
     text-decoration: none;
+    width: 128px;
+    text-align: center;
 }
 
 .page-back-forward.disabled {
@@ -795,6 +896,10 @@ body {
     color: #444444;
     opacity: 0.3;
     text-decoration: none;
+    display: block;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
 }
 
 .page-number-active {
