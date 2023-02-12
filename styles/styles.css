@@ -828,7 +828,7 @@ body {
     background-color: white;
     padding: 70px 40px 78px;
 
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 .product-list {
@@ -964,6 +964,7 @@ body {
     padding-bottom: 61px;
 
     display: flex;
+    flex-wrap: wrap;
 }
 
 .address-footer {
