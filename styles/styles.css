@@ -98,7 +98,6 @@ body {
 .page-header {
     width: 1160px;
     margin: 0 auto;
-
     position: relative;
 }
 
@@ -107,7 +106,6 @@ body {
 .logo-black {
     margin-left: 60px;
     margin-top: 20px;
-
     position: absolute;
 }
 
@@ -118,9 +116,7 @@ body {
 
 .search-panel {
     width: 517px;
-
     padding-right: 26px;
-
     display: flex;
 }
 
@@ -134,11 +130,10 @@ body {
 
 .search-btn {
     width: 160px;
-
     color: #000000;
 }
 
-.user-nav-bar {
+.user-nav {
     list-style-type: none;
     padding: 40px 60px 30px;
 
@@ -146,7 +141,7 @@ body {
     align-items: center;
 }
 
-.user-nav-bar ul {
+.user-nav-ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -157,19 +152,28 @@ body {
     justify-content: flex-end;
 }
 
-.user-nav-bar-link {
+.login-user-nav {
+    margin-right: auto;
+}
+
+.compare-user-nav {
+    margin-right: 61px;
+}
+
+.name-user-nav {
+    margin-right: 28px;
+}
+
+.logout-user-nav {
+    margin-right: auto;
+    opacity: 0.3;
+}
+
+.user-nav-link {
     color: #000000;;
     text-decoration: none;
 
     display: block;
-}
-
-.user-nav-bar li:first-child {
-    margin-right: auto;
-}
-
-.user-nav-bar li:nth-child(2) {
-    padding-right: 36px;
 }
 
 .main-nav {
@@ -823,6 +827,8 @@ body {
 .products-wrapper {
     background-color: white;
     padding: 70px 40px 78px;
+
+    flex-wrap: wrap
 }
 
 .product-list {
