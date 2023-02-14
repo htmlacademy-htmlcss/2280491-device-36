@@ -2,6 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HTML Academy: Девайс</title>
         <link rel="stylesheet" href="styles/styles.css">
     </head>
@@ -13,23 +14,24 @@
 
             <nav class="navigation-menu">
 
-                <ul class="user-nav-bar">
-                    <li>
-                        <div class="search-panel">
-                            <input class="text-small search-field" type="search" placeholder="Поиск по сайту">
-                            <button class="text-small search-btn">Найти</button>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="text user-nav-bar-link" href="#">Войти</a>
-                    </li>
-                    <li>
-                        <a class="text user-nav-bar-link" href="#">Сравнить</a>
-                    </li>
-                    <li>
-                        <a class="text user-nav-bar-link" href="#">Корзина</a>
-                    </li>
-                </ul>
+                <div class="user-nav">
+                    <div class="search-panel">
+                        <input class="text-small search-field" type="search" placeholder="Поиск по сайту">
+                        <button class="text-small search-btn">Найти</button>
+                    </div>
+
+                    <ul class="user-nav-ul">
+                        <li class="login-user-nav">
+                            <a class="text user-nav-link" href="#">Войти</a>
+                        </li>
+                        <li class="compare-user-nav">
+                            <a class="text user-nav-link" href="#">Сравнить</a>
+                        </li>
+                        <li>
+                            <a class="text user-nav-link" href="#">Корзина</a>
+                        </li>
+                    </ul>
+                </div>
 
 
                 <div class="main-nav">
@@ -208,36 +210,43 @@
 
             <div class="tabs-wrapper">
 
-                <ul>
-                    <li><button class="colored-btn">Доставка</button></li>
-                    <li><button class="colored-btn">Гарантия</button></li>
-                    <li><button class="colored-btn">Кредит</button></li>
+                <ul class="tabs-buttons">
+                    <li>
+                        <button class="colored-btn">Доставка</button>
+                    </li>
+                    <li>
+                        <button class="colored-btn">Гарантия</button>
+                    </li>
+                    <li>
+                        <button class="colored-btn">Кредит</button>
+                    </li>
                 </ul>
 
-                <section class="tabs-content delivery-tab tabs-content-show">
-                    <h2 class="title">Доставка</h2>
-                    <p class="text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
-                        бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж</p>
-                </section>
+                <ul class="tabs-content">
+                    <li class="tabs-item-content delivery-tab tabs-content-show">
+                        <h2 class="title">Доставка</h2>
+                        <p class="text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
+                            бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж</p>
+                    </li>
 
-                <section class="tabs-content warranty-tab">
-                    <h2 class="title">Гарантия</h2>
-                    <p class="text">Если из-за возгорания купленного у нас товара у вас
-                        сгорит дом — не переживайте, мы выдадим вам новый.
-                        Товар, не дом, конечно же.</p>
-                </section>
+                    <li class="tabs-item-content warranty-tab">
+                        <h2 class="title">Гарантия</h2>
+                        <p class="text">Если из-за возгорания купленного у нас товара у вас
+                            сгорит дом — не переживайте, мы выдадим вам новый.
+                            Товар, не дом, конечно же.</p>
+                    </li>
 
-                <section class="tabs-content credit-tab">
-                    <h2 class="title">Кредит</h2>
-                    <p class="text">Залезть в долговую яму стало проще! Кредитные консультанты
-                        подберут для вас наиболее выгодные условия кредита.
-                        Выгодные для банка, разумеется.</p>
-                </section>
-
+                    <li class="tabs-item-content credit-tab">
+                        <h2 class="title">Кредит</h2>
+                        <p class="text">Залезть в долговую яму стало проще! Кредитные консультанты
+                            подберут для вас наиболее выгодные условия кредита.
+                            Выгодные для банка, разумеется.</p>
+                    </li>
+                </ul>
             </div>
 
             <div class="rare-item-delivery-wrapper">
-                <span>Доставим редкий товар под заказ</span>
+                <div>Доставим редкий товар под заказ</div>
                 <button type="button">i</button>
             </div>
 
@@ -267,13 +276,13 @@
                         Заодно сможете проверить работоспособность покупки.
                     </p>
 
-                    <div>
+                    <div class="contacts-location">
                         <h3 class="title-small">Интернет-магазин «Девайс»</h3>
                         <p class="text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-                        <a class="text" href="tel:+78128121212">+7 (812) 812-12-12</a>
+                        <a class="text contacts-phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
                     </div>
 
-                    <div>
+                    <div class="contacts-working-hours">
                         <h3 class="title-small">Время работы</h3>
                         <ul>
                             <li class="text">пн—пт: с 10:00 до 22:00</li>
@@ -308,23 +317,35 @@
             </div>
 
             <div class="nav-footer">
-                <ul>
+                <ul class="main-nav-footer-wrapper">
                     <li>
                         <a class="main-nav-item main-nav-footer" href="#">Доставка</a>
                     </li>
                     <li>
-                        <a class="main-nav-item main-nav-footer" href="#">Гарантии</a>
+                        <a class="main-nav-item main-nav-footer" href="#">Гарантия</a>
                     </li>
                     <li>
                         <a class="main-nav-item main-nav-footer" href="#">Контакты</a>
                     </li>
                 </ul>
 
-                <div class="social-links-footer">
-                    <a href="#"><span class="visually-hidden">telegram</span></a>
-                    <a href="#"><span class="visually-hidden">youtube</span></a>
-                    <a href="#"><span class="visually-hidden">twitter</span></a>
-                </div>
+                <ul class="social-links-footer">
+                    <li>
+                        <a href="#">
+                            <span class="visually-hidden">telegram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="visually-hidden">youtube</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="visually-hidden">twitter</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
 
             <div class="phone-and-html-academy-footer">
