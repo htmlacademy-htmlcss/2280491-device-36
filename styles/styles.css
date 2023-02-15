@@ -847,7 +847,22 @@ body {
 }
 
 .product-list {
+    list-style-type: none;
     padding: 0;
+    display: grid;
+    grid-template-columns: 360px 360px;
+    gap: 40px 44px;
+    margin-bottom: 44px;
+}
+
+.product-descr-wrapper {
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-card img {
+    object-fit: cover;
 }
 
 .product-name {
@@ -872,13 +887,11 @@ body {
     line-height: 19px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-
     background-color: white;
-
     width: 100%;
-
     padding: 18px 0;
     margin-bottom: 44px;
+    cursor: pointer;
 }
 
 .pagination-wrapper {
