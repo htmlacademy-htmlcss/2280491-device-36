@@ -82,6 +82,13 @@ body {
     line-height: 21px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+
+    padding: 0;
 }
 
 .visually-hidden {
@@ -444,25 +451,46 @@ body {
 .tabs-wrapper {
     margin: 0 auto 70px;
     padding: 0 calc((100% - 1160px) / 2);
-
     display: flex;
-
 }
 
-.tabs-wrapper ul {
+.tabs-buttons-wrapper {
+    width: 280px;
+    border-right: solid 7px;
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-.delivery-wrapper button:active {
+.tabs-buttons-wrapper li {
+    margin-bottom: 35px;
+}
+
+.tabs-buttons-wrapper .colored-btn {
+    width: 160px;
+}
+
+.tabs-buttons-wrapper .black-btn {
     background-color: #000000;
     color: #FFE17F;
 }
 
+.tabs-buttons-wrapper li:first-child {
+    margin-top: 64px;
+    background-color: #000000;
+}
+
+.tabs-buttons-wrapper li:last-child {
+    margin-bottom: 0;
+}
+
+.tabs-content {
+    flex: 1;
+}
+
 .tabs-item-content {
     background-repeat: no-repeat;
-    background-position: right 72.5px;
+    background-position: right 73px;
     padding-right: 250px;
 
     display: none;
@@ -485,28 +513,15 @@ body {
     background-image: url(../images/credit.svg);
 }
 
-.tabs-buttons {
-    width: 280px;
-    border-right: solid 7px;
-}
-
 .tabs-content {
-    flex: 1;
-}
-
-.tabs-buttons li {
-    margin-bottom: 35px;
-}
-
-.tabs-buttons li:first-child {
-    margin-top: 65px;
+    margin: 0;
 }
 
 .tabs-content-show {
     display: flex;
     flex-direction: column;
 
-    padding: 72.5px 63px 72.5px 116px;
+    padding: 73px 63px 73px 116px;
 }
 
 .tabs-content-show h2 {
@@ -832,7 +847,22 @@ body {
 }
 
 .product-list {
+    list-style-type: none;
     padding: 0;
+    display: grid;
+    grid-template-columns: 360px 360px;
+    gap: 40px 44px;
+    margin-bottom: 44px;
+}
+
+.product-descr-wrapper {
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-card img {
+    object-fit: cover;
 }
 
 .product-name {
@@ -857,13 +887,11 @@ body {
     line-height: 19px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-
     background-color: white;
-
     width: 100%;
-
     padding: 18px 0;
     margin-bottom: 44px;
+    cursor: pointer;
 }
 
 .pagination-wrapper {
