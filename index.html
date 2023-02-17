@@ -22,13 +22,46 @@
 
                     <ul class="user-nav-ul">
                         <li class="login-user-nav">
-                            <a class="text user-nav-link" href="#">Войти</a>
+                            <a class="text user-nav-link login-user-link" href="#">
+                                <svg class="nav-icon" aria-hidden="true" focusable="false" width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 12H14C13.8 9.4 11.9 7.2 9.3 6.5C10.3 5.9 11 4.8 11 3.5C11 1.6 9.4 0 7.5 0C5.6 0 4 1.6 4 3.5C4 4.8 4.7 5.9 5.7 6.5C3.1 7.2 1.2 9.4 1 12Z" fill="black"/>
+                                </svg>
+                                Войти
+                            </a>
                         </li>
                         <li class="compare-user-nav">
-                            <a class="text user-nav-link" href="#">Сравнить</a>
+                            <a class="text user-nav-link compare-user-link" href="#">
+                                <svg class="nav-icon" aria-hidden="true" focusable="false" width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_33013_579)">
+                                        <path d="M6 0H4V12H6V0Z" fill="black"/>
+                                        <path d="M2 4H0V12H2V4Z" fill="black"/>
+                                        <path d="M10 3H8V12H10V3Z" fill="black"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_33013_579">
+                                            <rect width="10" height="12" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                Сравнить
+                            </a>
+
                         </li>
                         <li>
-                            <a class="text user-nav-link" href="#">Корзина</a>
+                            <a class="text user-nav-link basket-user-link" href="#">
+                                <svg class="nav-icon" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_33013_585)">
+                                        <path d="M15.3 5L11.8 5.2L8.6 0.3C8.5 0.1 8.2 0 8 0C7.8 0 7.5 0.1 7.4 0.3L4.2 5.2H0.7C0.3 5.2 0 5.5 0 5.9C0 6 0 6 0 6.1L1.9 12.9C2.1 13.6 2.6 14 3.3 14H12.7C13.4 14 13.9 13.6 14.1 12.9L16 6C16 5.9 16 5.9 16 5.8C16 5.4 15.7 5 15.3 5ZM8 1.9L10.2 5.1H5.9L8 1.9Z" fill="black"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_33013_585">
+                                            <rect width="16" height="14" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <div class="nav-icon circle-basket">2</div>
+                                Корзина
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -36,9 +69,19 @@
 
                 <div class="main-nav">
 
-                    <div>
+                    <div class="catalog-opener-wrapper">
                         <span class="main-nav-item">Каталог товаров</span>
-                        <button class="catalog-opener" type="button">
+                        <button class="catalog-opener-btn" type="button">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="1" clip-path="url(#clip0_33013_603)">
+                                <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_33013_603">
+                                <rect width="16" height="16" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
                             <span class="visually-hidden">Расскрыть каталог</span>
                         </button>
                     </div>
@@ -67,9 +110,15 @@
                             <img class="slider-pic" src="images/slider/slider-1.png" width="560" height="560" alt="квадрокоптер">
                             <button class="slider-prev" type="button">
                                 <span class="visually-hidden">Предыдущее фото</span>
+                                <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 60H16.5L0 30L16.5 0H20L3.8 30L20 60Z" fill="black"/>
+                                </svg>
                             </button>
                             <button class="slider-next" type="button">
                                 <span class="visually-hidden">Следующее фото</span>
+                                <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M-5.24537e-06 1.74846e-06L3.49999 1.44248e-06L20 30L3.5 60L0 60L16.2 30L-5.24537e-06 1.74846e-06Z" fill="black"/>
+                                </svg>
                             </button>
                         </div>
 
@@ -80,7 +129,7 @@
                                     замаскированным под стандартную камеру.</p>
                             </div>
 
-                            <button class="colored-btn" type="button">Подробнее</button>
+                            <button class="colored-btn slide-info-btn" type="button">Подробнее</button>
 
                             <table>
                                 <tr>
@@ -174,12 +223,12 @@
                     </button>
                 </li>
                 <li class="slider-pagination-item">
-                    <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                    <button class="slider-pagination-button" type="button">
                         <span class="visually-hidden">2 фото</span>
                     </button>
                 </li>
                 <li class="slider-pagination-item">
-                    <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                    <button class="slider-pagination-button" type="button">
                         <span class="visually-hidden">3 фото</span>
                     </button>
                 </li>
@@ -188,16 +237,16 @@
             <div class="catalogue-categories-wrapper">
                 <ul>
                     <li>
-                        <p class="catalogue-categories virtual-reality">Виртуальная реальность</p>
+                        <p class="catalogue-categories virtual-reality">Виртуальная<br>реальность</p>
                     </li>
                     <li>
-                        <p class="catalogue-categories monopods-for-selfie">Моноподы <br> для селфи</p>
+                        <p class="catalogue-categories monopods-for-selfie">Моноподы<br>для селфи</p>
                     </li>
                     <li>
                         <p class="catalogue-categories action-cameras">Экшн камеры</p>
                     </li>
                     <li>
-                        <p class="catalogue-categories fitness-bracelet">Фитнес-&zwj;браслеты</p>
+                        <p class="catalogue-categories fitness-bracelet">Фитнес-браслеты</p>
                     </li>
                     <li>
                         <p class="catalogue-categories smart-watch">Умные часы</p>
