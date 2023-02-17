@@ -534,11 +534,8 @@ body {
 
 .rare-item-delivery-wrapper {
     background: #F0F0F0;
-    height: 100px;
-
     width: 1160px;
     margin: 0 auto 70px;
-
     position: relative;
 }
 
@@ -550,30 +547,49 @@ body {
     text-transform: uppercase;
 
     padding: 40px 125px;
-
     text-align: center;
 }
 
-.rare-item-delivery-wrapper div::before {
+.rare-item-delivery-wrapper::before {
     content:"";
     width: 125px;
-    height: 100px;
+    height: 100%;
     display: block;
     background-color: #FFE17F;
     background-repeat: no-repeat;
+    background-image: url(../images/car.svg);
+    background-position: center;
 
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.rare-item-delivery-wrapper button {
+
+.rare-item-delivery-wrapper::after {
+    content:"";
     width: 125px;
-    height: 100px;
+    height: 100%;
+    background-color: #F0F0F0;;
 
     position: absolute;
     top: 0;
     right: 0;
+}
+
+.rare-item-delivery-wrapper button {
+    position: absolute;
+    top: 30px;
+    right: 43px;
+    z-index: 1;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(220, 220, 220, 0.5);
+
+    cursor: pointer;
 }
 
 /* tabs */
@@ -596,11 +612,24 @@ body {
     margin-bottom: 35px;
 }
 
-.tabs-buttons-wrapper .colored-btn {
-    width: 160px;
+.tabs-btn {
+    position: relative;
+    max-width: 160px;
+    padding: 10px 20px;
 }
 
-.tabs-buttons-wrapper .black-btn {
+.tabs-btn::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: #FFE17F;
+    z-index: -1;
+}
+
+.tabs-btn-active {
     background-color: #000000;
     color: #FFE17F;
 }
