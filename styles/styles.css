@@ -1185,6 +1185,7 @@ body {
     padding-bottom: 61px;
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
 }
 
 .social-links-footer li {
@@ -1195,10 +1196,22 @@ body {
     border-radius: 50%;
 }
 
+.social-links-footer li:hover {
+    background-color: #ffc700;
+}
+
+.social-links-footer a:focus-visible {
+    outline: 2px solid #AF4FFF;
+}
+
 .social-links-footer a {
     display: block;
     width: 100%;
     height: 100%;
+}
+
+.social-links-footer a:active{
+    opacity: 0.3;
 }
 
 .telegram-link {
@@ -1239,6 +1252,19 @@ body {
     color: #ffffff;
 }
 
+.main-nav-footer:hover {
+    color: #FFC700;
+    border-bottom: solid #FFC700 2px;
+}
+
+.main-nav-footer:active {
+    opacity: 0.3;
+}
+
+.main-nav-footer:focus:focus-visible {
+    outline: 2px solid #AF4FFF;
+}
+
 .phone-and-html-academy-footer {
     width: 175px;
     padding-top: 140px;
@@ -1246,10 +1272,37 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+}
 
+.htmlacademy-link svg {
+    fill: #FFC700;
+}
+
+.htmlacademy-link svg:hover {
+    fill: #ffffff;
+}
+
+.htmlacademy-link svg:active {
+    opacity: 0.3;
+}
+
+.htmlacademy-link:focus-visible {
+    outline: 2px solid #AF4FFF;
 }
 
 .phone-number-footer {
     color: #ffffff;
-    padding-bottom: 63px;
+    margin-bottom: 63px;
+}
+
+.phone-number-footer:hover {
+    color: #FFC700;
+}
+
+.phone-number-footer:active {
+    opacity: 0.3;
+}
+
+.phone-number-footer:focus-visible {
+    outline: 2px solid #AF4FFF;
 }
