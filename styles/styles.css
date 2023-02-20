@@ -105,6 +105,10 @@ body {
     position: relative;
 }
 
+.main-container {
+    flex-grow: 1;
+}
+
 /* Navigation */
 
 .logo-link-black {
@@ -147,7 +151,6 @@ body {
     background-repeat: no-repeat;
     background-color: transparent;
     background-position: 16px center;
-
 }
 
 .search-field::placeholder {
@@ -218,7 +221,7 @@ body {
 }
 
 .compare-user-nav {
-    margin-right: 61px;
+    margin-right: 36px;
 }
 
 .name-user-nav {
@@ -280,25 +283,15 @@ body {
     align-items: center;
 }
 
-.catalog-opener-wrapper {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-}
-
-.catalog-opener-wrapper:hover .catalog-opener-btn{
-    opacity: 1;
-}
-
-.catalog-opener-wrapper:focus-visible {
-    outline: 2px solid #AF4FFF;
-}
-
 .main-nav-item {
-    margin-right: 20px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
 }
 
 .main-nav-item:hover {
@@ -341,9 +334,33 @@ body {
     align-items: center;
 }
 
+.catalog-opener-wrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.catalog-opener-wrapper:hover .catalog-opener-btn{
+    opacity: 1;
+}
+
+.main-nav-item-catalog-opener {
+    padding-right: 20px;
+}
+
+.main-nav-item-catalog-opener:hover {
+    opacity: 1;
+}
+
+.catalog-opener-wrapper:focus-visible {
+    outline: 2px solid #AF4FFF;
+}
+
 .main-nav-catalog {
     padding: 0 60px 36px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -370,22 +387,6 @@ body {
     display: flex;
     justify-content: space-between;
 }
-
-.main-nav-item {
-    font-family: "Raleway", sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 21px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: #000000;
-    text-decoration: none;
-}
-
-.main-container {
-    flex-grow: 1;
-}
-
 /* Slider */
 
 .slider-wrapper {
