@@ -328,10 +328,11 @@ body {
     border: 2px solid #000000;
     border-radius: 50%;
     opacity: 0.3;
-
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .catalog-opener-wrapper {
@@ -1179,10 +1180,12 @@ body {
 .filter {
     margin: 0 60px;
     padding-top: 25px;
+    width: 200px;
 }
 
 .filter-title {
     margin-bottom: 60px;
+    line-height: 30px;
 }
 
 .filter-parameter {
@@ -1195,16 +1198,106 @@ body {
     text-transform: none;
 }
 
-.price-parameter-wrapper {
+/* Price */
+
+.price-parameter-wrapper{
+    margin: 0;
     margin-bottom: 35px;
-    padding-top: 12px;
-
-    border-top: solid #000000;
+    padding: 0;
+    border: none;
 }
 
-.price-parameter-wrapper input {
-    margin: 20px 0 0;
+.price-parameter-wrapper legend{
+    border-top: solid;
+    width: 100%;
+    padding: 12px 0 0;
 }
+
+.range-scale {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: #DCDCDC;
+    margin-top: 30px;
+}
+
+.range-bar {
+    position: absolute;
+    height: 2px;
+    background-color: #000000;
+}
+
+.range-wrapper-inputs {
+    font-family: 'Rubik', 'sans-serif';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.3);
+    text-transform: none;
+    letter-spacing: normal;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 11px;
+}
+
+.input-price-wrapper {
+    display: flex;
+}
+
+.input-price-wrapper-min {
+    margin-right: 75px;
+    margin-left: -12px;
+}
+
+.range-toggle {
+    border-radius: 50%;
+    border: 2px solid #000000;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.range-toggle:focus-visible {
+    outline: 2px solid #AF4FFF;
+}
+
+.toggle-min {
+    top: -9px;
+    left: -9px;
+}
+
+.toggle-max {
+    top: -9px;
+    right: -9px;
+}
+
+.range-input {
+    font-family: 'Rubik', 'sans-serif';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.3);
+    text-transform: none;
+    letter-spacing: normal;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.range-input:focus-visible {
+    outline: 2px solid #AF4FFF;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+/* Color */
 
 .color-parameter-wrapper {
     border: none;
@@ -1227,13 +1320,62 @@ body {
     padding: 0;
 }
 
-.color-options li {
+.color-options li:not(:last-child) {
     margin-bottom: 17px;
 }
 
-.color-options li:last-child {
-    margin-bottom: 17px;
+.control {
+    position: relative;
+    display: block;
+    padding-left: 36px;
+    cursor: pointer;
 }
+
+.control:hover {
+    opacity: 0.6;
+}
+
+.control:active {
+    opacity: 0.3;
+}
+
+.control:disabled {
+    opacity: 0.1;
+}
+
+.control-input[type="checkbox"]:checked {
+    border: 2px solid #000000;
+    border-radius: 3px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+    border: 2px solid #000000;
+    border-radius: 3px;
+
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 5px;
+    left: 5px;
+    background-image: url(../images/checkbox-tick.svg);
+    background-repeat: no-repeat;
+}
+
+.control-mark {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #CCCCCC;
+    border-radius: 3px;
+}
+
+/* bluetooth */
 
 .bluetooth-parameter-wrapper {
     border: none;
@@ -1248,13 +1390,34 @@ body {
 }
 
 .bluetooth-presence {
+    list-style-type: none;
     text-transform: none;
     letter-spacing: 0;
     margin-bottom: 35px;
+    padding: 0;
 }
 
-.bluetooth-yes-wrapper {
-    margin: 20px 0;
+.control-input[type="radio"] + .control-mark {
+    border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark {
+    border: 2px solid #000000;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    background-color: #000000;
+    border-radius: 50%;
+    content: "";
+}
+
+.bluetooth-presence li:not(:last-child) {
+    margin-bottom: 20px;
 }
 
 .filter-btn {
@@ -1302,6 +1465,12 @@ body {
     color: #000000;
     border: none;
     background-color: transparent;
+    display: flex;
+    width: 140px;
+    appearance: none;
+    background-image: url(../images/sort-popular.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
 }
 
 .sort-option:focus-visible {

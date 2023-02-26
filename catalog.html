@@ -77,9 +77,9 @@
 
                 <div class="main-nav-catalog">
 
-                    <button class="catalog-opener-wrapper">
+                    <div class="catalog-opener-wrapper" tabIndex="0">
                         <span class="main-nav-item main-nav-item-catalog-opener">Каталог товаров</span>
-                        <div class="catalog-opener-btn" type="button">
+                        <button class="catalog-opener-btn" type="button" tabIndex="-1">
                             <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g opacity="1" clip-path="url(#clip0_33013_603)">
                                     <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black"/>
@@ -91,8 +91,8 @@
                                 </defs>
                             </svg>
                             <span class="visually-hidden">Расскрыть каталог</span>
-                        </div>
-                    </button>
+                        </button>
+                    </div>
 
                     <ul>
                         <li>
@@ -131,48 +131,97 @@
                 <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
                     <div class="filter-title">Фильтр:</div>
 
-                    <div class="price-parameter-wrapper">
-                        <label class="filter-parameter" for="price">Стоимость</label>
-                        <input type="range" min="0" max="5000" step="1" id="cost">
-                    </div>
+                    <fieldset class="price-parameter-wrapper">
+                        <legend class="filter-parameter">Цена:</legend>
+
+                        <div class="range">
+                            <div class="range-scale">
+                                <div class="range-bar" style="left: 0; width: 120px">
+                                    <button class="range-toggle toggle-min">
+                                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                                    </button>
+                                    <button class="range-toggle toggle-max">
+                                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="range-wrapper-inputs">
+                                <div class="input-price-wrapper input-price-wrapper-min">
+                                    <label for="min-price">от</label>
+                                    <input class="range-input" type="number" id="min-price" value="0" name="min-price" style="width: 8px;">
+                                </div>
+                                <div class="input-price-wrapper">
+                                    <label for="max-price">до</label>
+                                    <input class="range-input" type="number" id="max-price" value="5000" name="max-price" style="width: 34px">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
 
                     <fieldset class="color-parameter-wrapper">
                         <legend class="filter-parameter">Цвет</legend>
                         <ul class="text-small color-options">
                             <li>
-                                <input type="checkbox" id="black" name="black" checked>
-                                <label for="black">Чёрный</label>
+                                <label class="control">
+                                    <input class="visually-hidden control-input" type="checkbox" name="black" checked>
+                                    <span class="control-mark"></span>
+                                    <span class="control-label">Черный</span>
+                                </label>
                             </li>
                             <li>
-                                <input type="checkbox" id="white" name="white" checked>
-                                <label for="white">Белый</label>
-                            <li>
-                                <input type="checkbox" id="blue" name="blue">
-                                <label for="blue">Синий</label>
+                                <label class="control">
+                                    <input class="visually-hidden control-input" type="checkbox" name="white" checked>
+                                    <span class="control-mark"></span>
+                                    <span class="control-label">Белый</span>
+                                </label>
                             </li>
                             <li>
-                                <input type="checkbox" id="red" name="red">
-                                <label for="red">Красный</label>
+                                <label class="control">
+                                    <input class="visually-hidden control-input" type="checkbox" name="blue">
+                                    <span class="control-mark"></span>
+                                    <span class="control-label">Синий</span>
+                                </label>
                             </li>
                             <li>
-                                <input type="checkbox" id="pink" name="pink">
-                                <label for="pink">Розовый</label>
+                                <label class="control">
+                                    <input class="visually-hidden control-input" type="checkbox" name="red">
+                                    <span class="control-mark"></span>
+                                    <span class="control-label">Красный</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="control">
+                                    <input class="visually-hidden control-input" type="checkbox" name="pink">
+                                    <span class="control-mark"></span>
+                                    <span class="control-label">Розовый</span>
+                                </label>
                             </li>
                         </ul>
                     </fieldset>
 
                     <fieldset class="bluetooth-parameter-wrapper">
                         <legend class="filter-parameter">Bluetooth</legend>
-                        <div class="text-small bluetooth-presence">
-                            <div class="bluetooth-yes-wrapper">
-                                <input type="radio" id="bluetooth-yes" checked>
-                                <label for="bluetooth-yes">Есть</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="bluetooth-no">
-                                <label for="bluetooth-no">Нет</label>
-                            </div>
-                        </div>
+                        <ul class="text-small bluetooth-presence">
+
+                            <li>
+                                <label class="control">
+                                    <input class="visually-hidden control-input" type="radio"
+                                        name="bluetooth" value="bluetooth-yes" checked>
+                                    <span class="control-mark"></span>
+                                    <span class="control-label">Есть</span>
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="control">
+                                    <input class="visually-hidden control-input" type="radio"
+                                        name="bluetooth" value="bluetooth-no" checked>
+                                    <span class="control-mark"></span>
+                                    <span class="control-label">Нет</span>
+                                </label>
+                            </li>
+                        </ul>
                     </fieldset>
 
                     <button class="colored-btn filter-btn" type="submit">Показать</button>
