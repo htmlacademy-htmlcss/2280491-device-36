@@ -126,7 +126,7 @@ body {
     opacity: 0.3;
 }
 
-.logo-link-black:focus-visible {
+.logo-link-black:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -157,7 +157,7 @@ body {
     opacity: 0.3;
 }
 
-.search-field:focus-visible {
+.search-field:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -184,7 +184,7 @@ body {
     color: rgba(255, 255, 255, 0.3)
 }
 
-.search-btn:focus-visible {
+.search-btn:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -212,7 +212,7 @@ body {
     opacity: 0.3;
 }
 
-.user-nav-link:focus-visible {
+.user-nav-link:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -302,7 +302,7 @@ body {
     opacity: 0.3;
 }
 
-.main-nav-item:focus-visible {
+.main-nav-item:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -318,7 +318,7 @@ body {
     opacity: 0.3;
 }
 
-.main-nav-item-active:focus-visible {
+.main-nav-item-active:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -356,7 +356,7 @@ body {
     opacity: 1;
 }
 
-.catalog-opener-wrapper:focus-visible {
+.catalog-opener-wrapper:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -459,7 +459,7 @@ body {
     opacity: 0.3;
 }
 
-.slider-arrow:focus-visible {
+.slider-arrow:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -512,7 +512,7 @@ body {
     background-color: #FFCC33;
 }
 
-.slide-info-btn:focus-visible {
+.slide-info-btn:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -563,7 +563,7 @@ body {
     opacity: 0.3;
 }
 
-.slider-pagination-button:focus-visible {
+.slider-pagination-button:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -598,7 +598,7 @@ body {
     width: 160px;
 }
 
-.catalog-categories-wrapper li:focus-visible {
+.catalog-categories-wrapper li:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -633,7 +633,7 @@ body {
     opacity: 0.3;
 }
 
-.catalog-categories:focus-visible {
+.catalog-categories:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -687,7 +687,7 @@ body {
     opacity: 0.3;
 }
 
-.rare-item-delivery-wrapper:focus-visible {
+.rare-item-delivery-wrapper:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -776,7 +776,7 @@ body {
     background-color: #FFCC33;
 }
 
-.tabs-btn:focus-visible {
+.tabs-btn:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -930,7 +930,7 @@ body {
     background-color: #FFCC33;
 }
 
-.about-btn:focus-visible {
+.about-btn:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -985,7 +985,7 @@ body {
     margin: 0;
 }
 
-.contacts-phone-number:focus-visible {
+.contacts-phone-number:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -1011,7 +1011,7 @@ body {
     background-color: #FFCC33;
 }
 
-.contacts-btn:focus-visible {
+.contacts-btn:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -1081,7 +1081,7 @@ body {
     background: transparent;
 }
 
-.newsletter-input:focus-visible {
+.newsletter-input:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -1103,7 +1103,7 @@ body {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.subscribe-btn:focus-visible {
+.subscribe-btn:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -1142,7 +1142,7 @@ body {
     text-decoration: none;
 }
 
-.breadcrumbs:focus-visible {
+.breadcrumbs:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -1258,7 +1258,7 @@ body {
     cursor: pointer;
 }
 
-.range-toggle:focus-visible {
+.range-toggle:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -1287,7 +1287,7 @@ body {
     cursor: pointer;
 }
 
-.range-input:focus-visible {
+.range-input:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -1449,7 +1449,7 @@ body {
     background-color: #FFCC33;
 }
 
-.filter-btn:focus-visible {
+.filter-btn:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -1473,7 +1473,7 @@ body {
     background-position: right center;
 }
 
-.sort-option:focus-visible {
+.sort-option:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -1512,7 +1512,7 @@ body {
     opacity: 1;
 }
 
-.arrow-sort:focus-visible {
+.arrow-sort:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -1607,7 +1607,7 @@ body {
     background: #FFC700;
 }
 
-.product-card a:focus-visible {
+.product-card a:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -1668,7 +1668,7 @@ body {
     opacity: 0.3;
 }
 
-.download-more-btn:focus-visible {
+.download-more-btn:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -1718,7 +1718,7 @@ body {
     color: rgba(0, 0, 0, 0.3)
 }
 
-.page-back-forward:focus-visible {
+.page-back-forward:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -1743,7 +1743,7 @@ body {
     color: rgb(68, 68, 68, 0.1)
 }
 
-.page-number:focus-visible {
+.page-number:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -1777,7 +1777,7 @@ body {
     opacity: 0.3;
 }
 
-.logo-link-yellow:focus-visible {
+.logo-link-yellow:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -1825,7 +1825,7 @@ body {
     background-color: #ffc700;
 }
 
-.social-links-footer a:focus-visible {
+.social-links-footer a:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -1886,7 +1886,7 @@ body {
     opacity: 0.3;
 }
 
-.main-nav-footer:focus:focus-visible {
+.main-nav-footer:focus:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -1911,7 +1911,7 @@ body {
     opacity: 0.3;
 }
 
-.htmlacademy-link:focus-visible {
+.htmlacademy-link:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -1928,6 +1928,60 @@ body {
     opacity: 0.3;
 }
 
-.phone-number-footer:focus-visible {
+.phone-number-footer:focus {
     outline: 2px solid #AF4FFF;
+}
+
+/* Modal */
+
+.modal-delivery {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240, 240, 240, 0.9);
+    z-index: 3;
+}
+
+.modal-wrapper {
+    width: 920px;
+    position: relative;
+    margin: auto;
+    padding: 72px 80px;
+    background-color: #ffffff;
+    border: 10px solid #000000;
+    box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.modal-close-btn {
+    position: absolute;
+    padding: 0;
+    top: 84px;
+    right: 80px;
+    width: 26px;
+    height: 26px;
+    background-color: transparent;
+    border: none;
+    background-image: url("../images/close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.modal-form {
+    margin-top: 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-line {
+    display: flex;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
 }
