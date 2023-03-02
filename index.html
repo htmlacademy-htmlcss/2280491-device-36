@@ -51,7 +51,7 @@
                             </a>
                         </li>
 
-                        <li>
+                        <li class="basket-user-nav">
                             <a class="text user-nav-link basket-user-link" href="#">
                                 <svg class="nav-icon" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_33013_585)">
@@ -105,17 +105,33 @@
 
                     <button class="catalog-opener-wrapper" type="button">
                         <span class="main-nav-item main-nav-item-catalog-opener">Каталог товаров</span>
-                        <div class="catalog-opener-btn">
-                            <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g opacity="1" clip-path="url(#clip0_33013_603)">
-                                    <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_33013_603">
-                                        <rect width="16" height="16" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
+                        <div class="catalog-opener-btn"></div>
+                        <div class="subcatalog">
+                            <ul>
+                                <li>
+                                    <a href="#">Виртуальная реальность</a>
+                                </li>
+                                <li>
+                                    <a href="#">Моноподы для cелфи</a>
+                                </li>
+                                <li>
+                                    <a href="#">Экшн-камеры</a>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li>
+                                    <a href="#">Фитнес-браслеты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Умные часы</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#">Квадрокоптеры</a>
+                                </li>
+                            </ul>
                         </div>
                     </button>
 
@@ -479,11 +495,11 @@
                             </div>
                             <div class="modal-form-item modal-delivery">
                                 <label>Количество:</label>
-                                <span class="modal-popover">i</span>
-                                <div class="text-small modal-popover-open">
+                                <span class="modal-tooltip">i</span>
+                                <p class="text-small modal-tooltip-open">
                                     Постараемся найти, сколько нужно.
                                     Привезём сколько получится по требованиям<br>к провозу багажа.
-                                </div>
+                                </p>
                                 <div class="modal-product-number">
                                     <button type="button"></button>
                                     <input type="number" value="1">
