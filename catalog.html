@@ -449,5 +449,51 @@
                 </a>
             </div>
         </footer>
+
+        <div class="modal">
+            <div class="modal-wrapper">
+                <button class="modal-close-btn">
+                    <span class="visually-hidden">Закрыть</span>
+                </button>
+
+                <section class="modal-content">
+                    <h2 class="title">Доставка под заказ</h2>
+                    <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+                        <div class="modal-form-line">
+                            <div class="modal-form-item personal-data">
+                                <label for="name">Ваше имя:</label>
+                                <input class="personal-data-input personal-data-name" type="text" id="name" placeholder="Введите имя" required>
+                                <span class="text-small input-descr">Добавьте имя</span>
+                            </div>
+                            <div class="modal-form-item personal-data">
+                                <label for="email">Ваш e-mail:</label>
+                                <input class="personal-data-input personal-data-email input-error" type="email" id="email" placeholder="почта" required>
+                                <span class="text-small input-descr input-descr-error">Забавный у вас адрес</span>
+                            </div>
+                        </div>
+                        <div class="modal-form-line">
+                            <div class="modal-form-item modal-delivery">
+                                <label for="product-delivery">Что нужно привезти:</label>
+                                <input class="modal-product-delivery-input" type="text" id="product-delivery" placeholder="В свободной форме">
+                            </div>
+                            <div class="modal-form-item modal-delivery">
+                                <label>Количество:</label>
+                                <button class="modal-tooltip" type="button">i</button>
+                                <p class="text-small modal-tooltip-open">
+                                    Постараемся найти, сколько нужно.
+                                    Привезём сколько получится по требованиям<br>к провозу багажа.
+                                </p>
+                                <div class="modal-product-number">
+                                    <button type="button"></button>
+                                    <input type="number" value="1">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="colored-btn modal-btn" type="submit">Отправить</button>
+                    </form>
+                </section>
+            </div>
+        </div>
     </body>
 </html>

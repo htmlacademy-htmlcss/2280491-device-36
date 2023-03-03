@@ -399,6 +399,7 @@ body {
     margin: 0;
     display: flex;
     justify-content: space-between;
+    z-index: 4;
 }
 
 .main-nav ul {
@@ -487,6 +488,7 @@ body {
 
 .slider-arrow:disabled {
     opacity: 0.1;
+    cursor: default;
 }
 
 .slider-prev {
@@ -591,6 +593,7 @@ body {
 
 .slider-pagination-button:disabled {
     opacity: 0.1;
+    cursor: default;
 }
 
 .slider-pagination-button-current {
@@ -1964,7 +1967,7 @@ body {
     height: 100%;
     background-color: rgba(240, 240, 240, 0.9);
     z-index: 4;
-    display: none;
+    display: block;
 }
 
 .modal-wrapper {
