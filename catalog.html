@@ -19,7 +19,7 @@
 
                 <div class="user-nav">
                     <div class="search-panel">
-                        <input class="text-small search-field" type="search" placeholder="Поиск по сайту">
+                        <input class="text-small search-field" type="search" placeholder="Текст поиска">
                         <button class="text-small search-btn">Найти</button>
                     </div>
 
@@ -176,7 +176,7 @@
                     <div class="filter-title">Фильтр:</div>
 
                     <fieldset class="price-parameter-wrapper">
-                        <legend class="filter-parameter">Цена:</legend>
+                        <legend class="filter-parameter">Стоимость:</legend>
 
                         <div class="range">
                             <div class="range-scale">
@@ -260,7 +260,7 @@
                             <li>
                                 <label class="control">
                                     <input class="visually-hidden control-input" type="radio"
-                                        name="bluetooth" value="bluetooth-no" checked>
+                                        name="bluetooth" value="bluetooth-no">
                                     <span class="control-mark"></span>
                                     <span class="control-label">Нет</span>
                                 </label>
@@ -317,7 +317,7 @@
                                     <img src="images/products/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
                                     <div class="product-descr-wrapper">
                                         <span class="product-name">Любительская <br> селфи-палка</span>
-                                        <span class="text product-price">500 р</span>
+                                        <span class="text product-price">500 &#8381;</span>
                                     </div>
                                     <button class="colored-btn product-card-btn" type="button">Подробнее</button>
                                 </a>
@@ -329,7 +329,7 @@
                                     <img src="images/products/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                                     <div class="product-descr-wrapper">
                                         <span class="product-name">Профессиональная <br> селфи-палка</span>
-                                        <span class="text product-price">1 500 р</span>
+                                        <span class="text product-price">1 500 &#8381;</span>
                                     </div>
                                     <button class="colored-btn product-card-btn" type="button">Подробнее</button>
                                 </a>
@@ -340,7 +340,7 @@
                                     <img src="images/products/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                                     <div class="product-descr-wrapper">
                                         <span class="product-name">Непотопляемая <br> селфи-палка</span>
-                                        <span class="text product-price">2 500 р</span>
+                                        <span class="text product-price">2 500 &#8381;</span>
                                     </div>
                                     <button class="colored-btn product-card-btn" type="button">Подробнее</button>
                                 </a>
@@ -350,8 +350,8 @@
                                     <span class="new-sticker">new</span>
                                     <img src="images/products/product-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                                     <div class="product-descr-wrapper">
-                                        <span class="product-name">Селфи-палка «Следуй за <br> мной»</span>
-                                        <span class="text product-price">1 500 р</span>
+                                        <span class="product-name">Селфи-палка «Следуй<br>за мной»</span>
+                                        <span class="text product-price">1 500 &#8381;</span>
                                     </div>
                                     <button class="colored-btn product-card-btn" type="button">Подробнее</button>
                                 </a>
@@ -430,7 +430,7 @@
             </div>
 
             <div class="phone-and-html-academy-footer">
-                <a class="text-small phone-number-footer" href="tel:+78128121212">+7 (812) 812-12-12</a>
+                <a class="text-small phone-number-footer" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
                 <a class="htmlacademy-link" href="https://htmlacademy.ru/">
                     <svg aria-hidden="true" focusable="false" width="115" height="33" viewBox="0 0 115 33" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 12.9V15.5H2.5V12.9H0Z" />
@@ -450,8 +450,8 @@
             </div>
         </footer>
 
-        <div class="modal">
-            <div class="modal-wrapper">
+        <div class="modal-wrapper modal-wrapper-close">
+            <div class="modal">
                 <button class="modal-close-btn">
                     <span class="visually-hidden">Закрыть</span>
                 </button>
@@ -462,19 +462,19 @@
                         <div class="modal-form-line">
                             <div class="modal-form-item personal-data">
                                 <label for="name">Ваше имя:</label>
-                                <input class="personal-data-input personal-data-name" type="text" id="name" placeholder="Введите имя" required>
+                                <input class="text-small personal-data-input personal-data-name" type="text" id="name" placeholder="Введите имя" required>
                                 <span class="text-small input-descr">Добавьте имя</span>
                             </div>
                             <div class="modal-form-item personal-data">
                                 <label for="email">Ваш e-mail:</label>
-                                <input class="personal-data-input personal-data-email input-error" type="email" id="email" placeholder="почта" required>
+                                <input class="text-small personal-data-input personal-data-email input-error" type="email" id="email" placeholder="почта" required>
                                 <span class="text-small input-descr input-descr-error">Забавный у вас адрес</span>
                             </div>
                         </div>
                         <div class="modal-form-line">
                             <div class="modal-form-item modal-delivery">
                                 <label for="product-delivery">Что нужно привезти:</label>
-                                <input class="modal-product-delivery-input" type="text" id="product-delivery" placeholder="В свободной форме">
+                                <input class="text-small modal-product-delivery-input" type="text" id="product-delivery" placeholder="В свободной форме">
                             </div>
                             <div class="modal-form-item modal-delivery">
                                 <label>Количество:</label>
@@ -485,7 +485,7 @@
                                 </p>
                                 <div class="modal-product-number">
                                     <button type="button"></button>
-                                    <input type="number" value="1">
+                                    <input class="text-small" type="number" value="1">
                                     <button type="button"></button>
                                 </div>
                             </div>

@@ -19,7 +19,7 @@
 
                 <div class="user-nav">
                     <div class="search-panel">
-                        <input class="text-small search-field" type="search" placeholder="Поиск по сайту">
+                        <input class="text-small search-field" type="search" placeholder="Текст поиска">
                         <button class="text-small search-btn">Найти</button>
                     </div>
 
@@ -53,7 +53,7 @@
 
                         <li class="basket-user-nav">
                             <a class="text user-nav-link basket-user-link" href="#">
-                                <svg class="nav-icon" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="nav-icon basket-icon" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_33013_585)">
                                         <path d="M15.3 5L11.8 5.2L8.6 0.3C8.5 0.1 8.2 0 8 0C7.8 0 7.5 0.1 7.4 0.3L4.2 5.2H0.7C0.3 5.2 0 5.5 0 5.9C0 6 0 6 0 6.1L1.9 12.9C2.1 13.6 2.6 14 3.3 14H12.7C13.4 14 13.9 13.6 14.1 12.9L16 6C16 5.9 16 5.9 16 5.8C16 5.4 15.7 5 15.3 5ZM8 1.9L10.2 5.1H5.9L8 1.9Z" fill="black"/>
                                     </g>
@@ -328,14 +328,14 @@
                         <button class="colored-btn tabs-btn">Гарантия</button>
                     </li>
                     <li>
-                        <button class="colored-btn tabs-btn">Кредит</button>
+                        <button class="colored-btn tabs-btn tabs-btn-credit">Кредит</button>
                     </li>
                 </ul>
 
                 <ul class="tabs-content">
                     <li class="tabs-item-content delivery-tab tabs-content-show">
                         <h2 class="title">Доставка</h2>
-                        <p class="text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
+                        <p class="text">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно
                             бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
                     </li>
 
@@ -357,15 +357,20 @@
 
             <a href="#" class="rare-item-delivery-wrapper">
                 <div class="rare-item-delivery-title">Доставим редкий товар под заказ</div>
-                <span>i</span>
+                <button type="button">
+                    <svg width="4" height="12" viewBox="0 0 4 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 0H1V2H3V0Z" fill="black"/>
+                        <path d="M3 4H1V12H3V4Z" fill="black"/>
+                    </svg>
+                </button>
             </a>
 
             <div class="about-contacts-wrapper">
                 <section class="about-wrapper">
                     <h2 class="title">О нас</h2>
 
-                    <p class="text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-                    <p class="text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+                    <p class="text">Огромный выбор гаджетов не оставит равнодушным<br>гика, который есть в каждом из нас.</p>
+                    <p class="text">Мы можем доставить ваш товар в самые отдалённые<br>уголки России транспортными компаниями:</p>
 
                     <ul>
                         <li class="way-of-delivery">Меловые линии</li>
@@ -374,6 +379,7 @@
                     </ul>
 
                     <button class="colored-btn about-btn" type="button">Подробнее о нас</button>
+
                 </section>
 
                 <section class="contacts-wrapper">
@@ -381,7 +387,7 @@
 
                     <p class="text">
                         Вы можете забрать товар сами, заехав в наш офис.
-                        Заодно сможете проверить работоспособность покупки.
+                        <br>Заодно сможете проверить работоспособность покупки.
                     </p>
 
                     <div class="contacts-location">
@@ -404,8 +410,8 @@
 
             <div class="newsletter-wrapper">
                 <section class="newsletter-subscribtion">
-                    <h2 class="title">Подпишитесь на рассылку</h2>
-                    <p class="text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
+                    <h2 class="title">Подпишитесь<br>на рассылку</h2>
+                    <p class="text">Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами,
                        распаковками, а также акции, спецпредложения и вот это вот всё.</p>
                 </section>
                 <div class="subscribe-field">
@@ -479,8 +485,8 @@
             </div>
         </footer>
 
-        <div class="modal">
-            <div class="modal-wrapper">
+        <div class="modal-wrapper modal-wrapper-close">
+            <div class="modal">
                 <button class="modal-close-btn">
                     <span class="visually-hidden">Закрыть</span>
                 </button>
@@ -491,30 +497,30 @@
                         <div class="modal-form-line">
                             <div class="modal-form-item personal-data">
                                 <label for="name">Ваше имя:</label>
-                                <input class="personal-data-input personal-data-name" type="text" id="name" placeholder="Введите имя" required>
+                                <input class="text-small personal-data-input personal-data-name" type="text" id="name" placeholder="Введите имя" required>
                                 <span class="text-small input-descr">Добавьте имя</span>
                             </div>
                             <div class="modal-form-item personal-data">
                                 <label for="email">Ваш e-mail:</label>
-                                <input class="personal-data-input personal-data-email input-error" type="email" id="email" placeholder="почта" required>
+                                <input class="text-small personal-data-input personal-data-email input-error" type="email" id="email" placeholder="почта" required>
                                 <span class="text-small input-descr input-descr-error">Забавный у вас адрес</span>
                             </div>
                         </div>
                         <div class="modal-form-line">
                             <div class="modal-form-item modal-delivery">
                                 <label for="product-delivery">Что нужно привезти:</label>
-                                <input class="modal-product-delivery-input" type="text" id="product-delivery" placeholder="В свободной форме">
+                                <input class="text-small modal-product-delivery-input" type="text" id="product-delivery" placeholder="В свободной форме">
                             </div>
                             <div class="modal-form-item modal-delivery">
                                 <label>Количество:</label>
-                                <button class="modal-tooltip" type="button">i</button>
+                                <button class="modal-tooltip" type="button"></button>
                                 <p class="text-small modal-tooltip-open">
                                     Постараемся найти, сколько нужно.
                                     Привезём сколько получится по требованиям<br>к провозу багажа.
                                 </p>
                                 <div class="modal-product-number">
                                     <button type="button"></button>
-                                    <input type="number" value="1">
+                                    <input class="text-small" type="number" value="1">
                                     <button type="button"></button>
                                 </div>
                             </div>
