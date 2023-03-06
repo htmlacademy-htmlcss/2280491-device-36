@@ -107,8 +107,7 @@
                 <div class="main-nav-catalog">
 
                     <button class="catalog-opener-wrapper">
-                        <span class="main-nav-item main-nav-item-catalog-opener">Каталог товаров</span>
-                        <div class="catalog-opener-btn" type="button"></div>
+                        <span class="main-nav-item catalog-opener">Каталог товаров</span>
                         <div class="subcatalog">
                             <ul>
                                 <li>
@@ -478,15 +477,21 @@
                             </div>
                             <div class="modal-form-item modal-delivery">
                                 <label>Количество:</label>
-                                <button class="modal-tooltip" type="button">i</button>
+                                <button class="modal-tooltip" type="button">
+                                    <span class="visually-hidden">Узнать подробнее.</span>
+                                </button>
                                 <p class="text-small modal-tooltip-open">
                                     Постараемся найти, сколько нужно.
                                     Привезём сколько получится по требованиям<br>к провозу багажа.
                                 </p>
                                 <div class="modal-product-number">
-                                    <button type="button"></button>
+                                    <button type="button">
+                                        <span class="visually-hidden">Минус один.</span>
+                                    </button>
                                     <input class="text-small" type="number" value="1">
-                                    <button type="button"></button>
+                                    <button type="button">
+                                        <span class="visually-hidden">Плюс один.</span>
+                                    </button>
                                 </div>
                             </div>
                         </div>

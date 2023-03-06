@@ -104,8 +104,7 @@
                 <div class="main-nav">
 
                     <button class="catalog-opener-wrapper" type="button">
-                        <span class="main-nav-item main-nav-item-catalog-opener">Каталог товаров</span>
-                        <div class="catalog-opener-btn"></div>
+                        <span class="main-nav-item catalog-opener">Каталог товаров</span>
                         <div class="subcatalog">
                             <ul>
                                 <li>
@@ -158,13 +157,13 @@
                         <div class="slider-pic-block">
                             <img class="slider-pic" src="images/slider/slider-1.png" width="560" height="560" alt="квадрокоптер">
                             <button class="slider-prev slider-arrow" type="button">
-                                <span class="visually-hidden">Предыдущее фото</span>
+                                <span class="visually-hidden">Предыдущее фото.</span>
                                 <svg aria-hidden="true" focusable="false" width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M20 60H16.5L0 30L16.5 0H20L3.8 30L20 60Z" fill="black"/>
                                 </svg>
                             </button>
                             <button class="slider-next slider-arrow" type="button">
-                                <span class="visually-hidden">Следующее фото</span>
+                                <span class="visually-hidden">Следующее фото.</span>
                                 <svg aria-hidden="true" focusable="false" width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M-5.24537e-06 1.74846e-06L3.49999 1.44248e-06L20 30L3.5 60L0 60L16.2 30L-5.24537e-06 1.74846e-06Z" fill="black"/>
                                 </svg>
@@ -280,17 +279,17 @@
             <ol class="slider-pagination">
                 <li class="slider-pagination-item">
                     <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                        <span class="visually-hidden">1 фото</span>
+                        <span class="visually-hidden">Перый слайд.</span>
                     </button>
                 </li>
                 <li class="slider-pagination-item">
                     <button class="slider-pagination-button" type="button">
-                        <span class="visually-hidden">2 фото</span>
+                        <span class="visually-hidden">Второй слайд.</span>
                     </button>
                 </li>
                 <li class="slider-pagination-item">
                     <button class="slider-pagination-button" type="button">
-                        <span class="visually-hidden">3 фото</span>
+                        <span class="visually-hidden">Третий слайд.</span>
                     </button>
                 </li>
             </ol>
@@ -358,7 +357,8 @@
             <a href="#" class="rare-item-delivery-wrapper">
                 <div class="rare-item-delivery-title">Доставим редкий товар под заказ</div>
                 <button type="button">
-                    <svg width="4" height="12" viewBox="0 0 4 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <span class="visually-hidden">Узнать подробнее</span>
+                    <svg aria-hidden="true" focusable="false" width="4" height="12" viewBox="0 0 4 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3 0H1V2H3V0Z" fill="black"/>
                         <path d="M3 4H1V12H3V4Z" fill="black"/>
                     </svg>
@@ -513,15 +513,21 @@
                             </div>
                             <div class="modal-form-item modal-delivery">
                                 <label>Количество:</label>
-                                <button class="modal-tooltip" type="button"></button>
+                                <button class="modal-tooltip" type="button">
+                                    <span class="visually-hidden">Узнать подробнее.</span>
+                                </button>
                                 <p class="text-small modal-tooltip-open">
                                     Постараемся найти, сколько нужно.
                                     Привезём сколько получится по требованиям<br>к провозу багажа.
                                 </p>
                                 <div class="modal-product-number">
-                                    <button type="button"></button>
+                                    <button type="button">
+                                        <span class="visually-hidden">Минус один.</span>
+                                    </button>
                                     <input class="text-small" type="number" value="1">
-                                    <button type="button"></button>
+                                    <button type="button">
+                                        <span class="visually-hidden">Плюс один.</span>
+                                    </button>
                                 </div>
                             </div>
                         </div>
