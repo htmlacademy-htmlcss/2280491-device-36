@@ -152,13 +152,13 @@
           </div>
 
           <ul>
-            <li>
+            <li class="main-nav-services">
               <a class="main-nav-item" href="#">Доставка</a>
             </li>
-            <li>
+            <li class="main-nav-services">
               <a class="main-nav-item" href="#">Гарантия</a>
             </li>
-            <li>
+            <li class="main-nav-services">
               <a class="main-nav-item" href="#">Контакты</a>
             </li>
           </ul>
@@ -332,7 +332,9 @@
                 <li class="product-card">
                   <a href="#">
                     <span class="new-sticker">new</span>
-                    <img src="images/products/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                    <div class="product-card-img-wrapper">
+                      <img src="images/products/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                    </div>
                     <div class="product-descr-wrapper">
                       <span class="product-name">Любительская <br> селфи-палка</span>
                       <span class="text product-price">500 &#8381;</span>
@@ -344,8 +346,10 @@
                 <li class="product-card">
                   <a href="#">
                     <span class="new-sticker">new</span>
-                    <img src="images/products/product-2.jpg" width="360" height="380"
-                         alt="Профессиональная селфи-палка">
+                    <div class="product-card-img-wrapper">
+                      <img src="images/products/product-2.jpg" width="360" height="380"
+                           alt="Профессиональная селфи-палка">
+                    </div>
                     <div class="product-descr-wrapper">
                       <span class="product-name">Профессиональная <br> селфи-палка</span>
                       <span class="text product-price">1 500 &#8381;</span>
@@ -357,8 +361,10 @@
                 <li class="product-card">
                   <a href="#">
                     <span class="new-sticker">new</span>
-                    <img src="images/products/product-3.jpg" width="360" height="380"
-                         alt="Непотопляемая селфи-палка">
+                    <div class="product-card-img-wrapper">
+                      <img src="images/products/product-3.jpg" width="360" height="380"
+                           alt="Непотопляемая селфи-палка">
+                    </div>
                     <div class="product-descr-wrapper">
                       <span class="product-name">Непотопляемая <br> селфи-палка</span>
                       <span class="text product-price">2 500 &#8381;</span>
@@ -369,9 +375,10 @@
                 <li class="product-card">
                   <a href="#">
                     <span class="new-sticker">new</span>
-                    <img src="images/products/product-4.jpg" width="360" height="380"
-
-                    alt="Селфи-палка «Следуй за мной»">
+                    <div class="product-card-img-wrapper">
+                      <img src="images/products/product-4.jpg" width="360" height="380"
+                           alt="Селфи-палка «Следуй за мной»">
+                    </div>
                     <div class="product-descr-wrapper">
                       <span class="product-name">Селфи-палка «Следуй<br>за мной»</span>
                       <span class="text product-price">1 500 &#8381;</span>
@@ -388,7 +395,7 @@
 
                 <ol>
                   <li>
-                    <a class="text-small page-number page-number-active" href="#">1</a>
+                    <a class="text-small page-number page-number-current" href="#">1</a>
                   </li>
                   <li>
                     <a class="text-small page-number" href="#">2</a>
@@ -496,7 +503,9 @@
       </div>
     </footer>
 
-    <div class="modal-wrapper modal-wrapper-close">
+    <div class="modal-wrapper modal-wrapper-close" {
+      display: none;
+    }>
       <div class="modal">
         <button class="modal-close-btn">
           <span class="visually-hidden">Закрыть</span>
