@@ -437,7 +437,8 @@
         </section>
         <div class="subscribe-field">
           <form action="https://echo.htmlacademy.ru/" method="post">
-            <input class="text newsletter-input" type="email" placeholder="Ваш e-mail">
+            <input class="text newsletter-input" type="email" id="email" placeholder="Ваш e-mail">
+            <label class="visually-hidden" for="email"></label>
             <button class="colored-btn subscribe-btn" type="submit">Подписаться</button>
           </form>
           <span class="text">Это бесплатно</span>
@@ -547,8 +548,8 @@
                 <span class="text-small input-descr">Добавьте имя</span>
               </div>
               <div class="modal-form-item personal-data">
-                <label for="email">Ваш e-mail:</label>
-                <input class="text-small personal-data-input personal-data-email input-error" type="email" id="email"
+                <label for="email-modal">Ваш e-mail:</label>
+                <input class="text-small personal-data-input personal-data-email input-error" type="email" id="email-modal"
                   placeholder="почта" required>
                 <span class="text-small input-descr input-descr-error">Забавный у вас адрес</span>
               </div>
@@ -557,7 +558,7 @@
               <div class="modal-form-item modal-delivery">
                 <label for="product-delivery">Что нужно привезти:</label>
                 <input class="text-small modal-product-delivery-input" type="text" id="product-delivery"
-                       placeholder="В свободной форме">
+                  placeholder="В свободной форме" required>
               </div>
               <div class="modal-form-item modal-delivery">
                 <label>Количество:</label>

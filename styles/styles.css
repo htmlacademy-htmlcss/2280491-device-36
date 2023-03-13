@@ -1133,23 +1133,24 @@ body {
 }
 
 .newsletter-input {
-  border: none;
   padding: 11px 0 11px 16px;
-  border-bottom: 3px solid #c4c4c4;
-  background: transparent;
+  border: solid #c4c4c4;
+  border-width: 0 0 3px 0;
+  background-color: transparent;
   min-width: 542px;
 }
 
-.newsletter-input:focus-visible {
-  outline: 2px solid #af4fff;
-}
-
 .newsletter-input::placeholder {
-  opacity: 0.5;
+  color: rgba(68, 68, 68, 0.5);
 }
 
 .newsletter-input:not(:placeholder-shown) {
+  color: rgba(68, 68, 68, 1);
+}
+
+.newsletter-input:focus-visible {
   background-color: #dcdcdc;
+  outline: none;
 }
 
 .newsletter-input:disabled {
@@ -1161,7 +1162,7 @@ body {
 }
 
 .newsletter-input:focus:invalid {
-  border-bottom: #ea5454;
+  border-bottom-color: #ea5454;
 }
 
 .subscribe-btn {
@@ -2166,6 +2167,15 @@ body {
   opacity: 0.3;
 }
 
+.personal-data-input:invalid {
+  box-shadow: none;
+}
+
+.personal-data-input:focus:invalid {
+  border: 2px solid #ea5454;
+  outline: none;
+}
+
 .personal-data:not(:last-child) {
   margin-right: 40px;
 }
@@ -2207,6 +2217,15 @@ body {
   opacity: 0.3;
 }
 
+.modal-product-delivery-input:invalid {
+  box-shadow: none;
+}
+
+.modal-product-delivery-input:focus:invalid {
+  border: 2px solid #ea5454;
+  outline: none;
+}
+
 .modal-tooltip {
   position: absolute;
   width: 26px;
@@ -2223,6 +2242,10 @@ body {
   background-image: url("../images/i-sign.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.modal-tooltip:focus-visible {
+  outline: 2px solid #af4fff;
 }
 
 .modal-tooltip:hover + .modal-tooltip-open,
@@ -2605,7 +2628,8 @@ body {
   }
 
   .newsletter-input:focus {
-    outline: 2px solid #af4fff;
+    background-color: #dcdcdc;
+    outline: none;
   }
 
   .subscribe-btn:focus {
@@ -2684,6 +2708,10 @@ body {
     outline: 2px solid #af4fff;
   }
 
+  .modal-tooltip:focus {
+    outline: 2px solid #af4fff;
+  }
+
   .modal-tooltip:focus + .modal-tooltip-open {
     display: block;
   }
@@ -2733,10 +2761,6 @@ body {
 
 .input-descr-error {
   color: #ff3d3d;
-}
-
-.newsletter-input-error {
-  border-bottom: 3px solid #ea5454;
 }
 
 .page-number-current {
