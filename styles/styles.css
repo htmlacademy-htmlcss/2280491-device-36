@@ -860,13 +860,13 @@ body {
   color: #ffe17f;
 }
 
-.tabs-btn-active:hover {
+.tabs-btn-active:hover:enabled {
   background-color: #000000;
   color: #ffe17f;
   padding-left: 27px;
 }
 
-.tabs-btn-active:active {
+.tabs-btn-active:active:enabled {
   background-color: #000000;
   color: #ffe17f;
   padding-left: 27px;
@@ -1221,6 +1221,14 @@ body {
 
 .breadcrumbs {
   text-decoration: none;
+}
+
+.breadcrumbs:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs:active {
+  opacity: 0.3;
 }
 
 .breadcrumbs:focus-visible {
@@ -1811,28 +1819,31 @@ body {
   color: #000000;
   text-decoration: none;
   display: block;
-  padding: 25px;
+  padding: 23px;
   text-align: center;
-  max-width: 120px;
+  max-width: 150px;
+  border: none;
+  cursor: pointer;
+  background-color: #ebebeb;
 }
 
-.page-back-forward.disabled {
-  color: #444444;
-  opacity: 0.3;
-  pointer-events: none;
-  cursor: default;
-}
-
-.page-back-forward:hover {
+.page-back-forward:hover:enabled {
   background-color: #dcdcdc;
 }
 
-.page-back-forward:active {
+.page-back-forward:active:enabled {
   color: rgba(0, 0, 0, 0.3);
 }
 
 .page-back-forward:focus-visible {
   outline: 2px solid #af4fff;
+}
+
+.page-back-forward:disabled {
+  color: #444444;
+  opacity: 0.3;
+  pointer-events: none;
+  cursor: default;
 }
 
 .page-number {
@@ -1866,7 +1877,7 @@ body {
 
 .footer-container {
   display: grid;
-  gap: 30px 119px;
+  gap: 28px 119px;
   grid-template-columns: 240px 444px 238px;
 }
 
@@ -1912,7 +1923,7 @@ body {
   gap: 15px;
   list-style-type: none;
   padding-left: 0;
-  padding-top: 15px;
+  padding-top: 18px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -2008,6 +2019,7 @@ body {
   grid-row: 3;
   grid-column: 3;
   display: flex;
+  margin-bottom: 5px;
 }
 
 .htmlacademy-link svg {
