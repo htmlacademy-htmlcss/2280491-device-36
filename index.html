@@ -20,7 +20,8 @@
 
         <div class="user-nav">
           <div class="search-panel">
-            <input class="text-small search-field" type="search" placeholder="Поиск по сайту">
+            <input class="text-small search-field" type="search" placeholder="Поиск по сайту" id="search-header">
+            <label class="visually-hidden" for="search-header"></label>
             <button class="text-small search-btn">Найти</button>
           </div>
 
@@ -437,8 +438,8 @@
         </section>
         <div class="subscribe-field">
           <form action="https://echo.htmlacademy.ru/" method="post">
-            <input class="text newsletter-input" type="email" id="email" placeholder="Ваш e-mail">
-            <label class="visually-hidden" for="email"></label>
+            <input class="text newsletter-input" type="email" id="newsletter-email" placeholder="Ваш e-mail">
+            <label class="visually-hidden" for="newsletter-email"></label>
             <button class="colored-btn subscribe-btn" type="submit">Подписаться</button>
           </form>
           <span class="text">Это бесплатно</span>
@@ -548,8 +549,8 @@
                 <span class="text-small input-descr">Добавьте имя</span>
               </div>
               <div class="modal-form-item personal-data">
-                <label for="email-modal">Ваш e-mail:</label>
-                <input class="text-small personal-data-input personal-data-email input-error" type="email" id="email-modal"
+                <label for="email">Ваш e-mail:</label>
+                <input class="text-small personal-data-input personal-data-email input-error" type="email" id="email"
                   placeholder="почта" required>
                 <span class="text-small input-descr input-descr-error">Забавный у вас адрес</span>
               </div>
@@ -573,7 +574,8 @@
                   <button type="button">
                     <span class="visually-hidden">Минус один.</span>
                   </button>
-                  <input class="text-small" type="number" value="1">
+                  <input class="text-small" type="number" value="1" id="number-of-products">
+                  <label class="visually-hidden" for="number-of-products"></label>
                   <button type="button">
                     <span class="visually-hidden">Плюс один.</span>
                   </button>

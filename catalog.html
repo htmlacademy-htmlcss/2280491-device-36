@@ -19,7 +19,8 @@
 
         <div class="user-nav">
           <div class="search-panel">
-            <input class="text-small search-field" type="search" placeholder="Текст поиска">
+            <input class="text-small search-field" type="search" placeholder="Поиск по сайту" id="search-header">
+            <label class="visually-hidden" for="search-header"></label>
             <button class="text-small search-btn">Найти</button>
           </div>
 
@@ -207,7 +208,7 @@
                 <div class="input-price-wrapper input-price-wrapper-min">
                   <label for="min-price">от</label>
                   <input class="range-input" type="number" id="min-price" value="0" name="min-price"
-                         style="width: 9px;">
+                    style="width: 9px;">
                 </div>
                 <div class="input-price-wrapper">
                   <label for="max-price">до</label>
@@ -545,7 +546,8 @@
                   <button type="button">
                     <span class="visually-hidden">Минус один.</span>
                   </button>
-                  <input class="text-small" type="number" value="1">
+                  <input class="text-small" type="number" value="1" id="number-of-products">
+                  <label class="visually-hidden" for="number-of-products"></label>
                   <button type="button">
                     <span class="visually-hidden">Плюс один.</span>
                   </button>
