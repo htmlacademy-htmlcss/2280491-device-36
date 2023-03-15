@@ -18,11 +18,12 @@
       <nav class="navigation-menu">
 
         <div class="user-nav">
-          <div class="search-panel">
-            <input class="text-small search-field" type="search" placeholder="Поиск по сайту" id="search-header">
-            <label class="visually-hidden" for="search-header"></label>
-            <button class="text-small search-btn">Найти</button>
-          </div>
+          <form class="search-panel" action="https://echo.htmlacademy.ru">
+            <input class="text-small search-field" type="search" name="search"
+              placeholder="Поиск по сайту" id="search-header" required>
+            <label class="visually-hidden" for="search-header">Поиск по сайту</label>
+            <button class="text-small search-btn" type="submit">Найти</button>
+          </form>
 
           <ul class="user-nav-ul">
             <li class="name-user-nav">
@@ -129,7 +130,7 @@
                   <a href="#">Виртуальная реальность</a>
                 </li>
                 <li>
-                  <a href="#">Моноподы для cелфи</a>
+                  <a class="subcatalog-current" href="catalog.html">Моноподы для cелфи</a>
                 </li>
                 <li>
                   <a href="#">Экшн-камеры</a>
@@ -178,7 +179,7 @@
             <a class="text-small breadcrumbs" href="#">Каталог товаров</a>
           </li>
           <li class="breadcrumbs-arrow">
-            <a class="text-small breadcrumbs" href="#">Моноподы для селфи</a>
+            <a class="text-small breadcrumbs" href="catalog.html">Моноподы для селфи</a>
           </li>
         </ul>
       </div>
@@ -517,13 +518,13 @@
               <div class="modal-form-item personal-data">
                 <label for="name">Ваше имя:</label>
                 <input class="text-small personal-data-input personal-data-name" type="text" id="name"
-                  placeholder="Введите имя" required>
+                  name="name" placeholder="Введите имя" required>
                 <span class="text-small input-descr">Добавьте имя</span>
               </div>
               <div class="modal-form-item personal-data">
                 <label for="email">Ваш e-mail:</label>
                 <input class="text-small personal-data-input personal-data-email input-error" type="email" id="email"
-                  placeholder="почта" required>
+                  name="email" placeholder="почта" required>
                 <span class="text-small input-descr input-descr-error">Забавный у вас адрес</span>
               </div>
             </div>
@@ -531,7 +532,7 @@
               <div class="modal-form-item modal-delivery">
                 <label for="product-delivery">Что нужно привезти:</label>
                 <input class="text-small modal-product-delivery-input" type="text" id="product-delivery"
-                  placeholder="В свободной форме" required>
+                  name="product-name" placeholder="В свободной форме" required>
               </div>
               <div class="modal-form-item modal-delivery">
                 <label>Количество:</label>
@@ -546,8 +547,8 @@
                   <button type="button">
                     <span class="visually-hidden">Минус один.</span>
                   </button>
-                  <input class="text-small" type="number" value="1" id="number-of-products">
-                  <label class="visually-hidden" for="number-of-products"></label>
+                  <input class="text-small" type="number" value="1" name="number-of-products" id="number-of-products">
+                  <label class="visually-hidden" for="number-of-products">Количество товаров</label>
                   <button type="button">
                     <span class="visually-hidden">Плюс один.</span>
                   </button>
